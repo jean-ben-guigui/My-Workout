@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+struct ImageService {
+    
+    func downloadPhoto(url: URL) -> UIImage? {
+        var image: UIImage?
+        let downloadSession = URLSession(configuration: URLSessionConfiguration.ephemeral)
+        let task = downloadSession.dataTask(with: url) { data, response, error in
+            if let data = data {
+                image = UIImage(data: data)
+            }
+        }
+        return image
+    }
+}

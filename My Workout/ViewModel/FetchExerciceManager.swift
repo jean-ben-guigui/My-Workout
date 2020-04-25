@@ -8,16 +8,16 @@
 
 import Foundation
 
-class FetchHandler {
+class FetchExerciseManager {
     private var muscles = [Int: String]()
     private var equipment = [Int: String]()
     private var categories = [Int: String]()
-    private var exercises: Set<Exercise> = Set<Exercise>()
+    private var exercises = Set<Exercise>()
+    private var exercisesViewModel = Set<ExerciseViewModel>()
     private var error: NetworkError?
     private let apiHandler = ApiHandler()
     
-    //TODO make this method throw and handle it in the viewcontroller
-    func loadData(completionHandler: @escaping ((Result<[ExerciseViewModel], NetworkError>) -> Void) ) {
+    func loadData(completionHandler: @escaping (Set<ExerciseViewModel>) -> Void ) {
         let fetchGroup = DispatchGroup()
         
         fetchCategories(dispatchGroup: fetchGroup)
@@ -27,8 +27,7 @@ class FetchHandler {
         
         fetchGroup.wait()
         
-        var exercisesViewModel = [ExerciseViewModel]()
-        
+        var exercisesViewModelArray = [ExerciseViewModel]()
         for exercise in exercises {
             let exerciseViewModel = ExerciseViewModel(
                 exercise: exercise,
@@ -36,13 +35,17 @@ class FetchHandler {
                 allCategories: categories,
                 allEquipment: equipment
             )
-            exercisesViewModel.append(exerciseViewModel)
+            exercisesViewModelArray.append(exerciseViewModel)
         }
+        exercisesViewModel = Set<ExerciseViewModel>(exercisesViewModelArray)
         
-        completionHandler(.success(exercisesViewModel))
+        completionHandler(exercisesViewModel)
+    }
+    
+    func downloadImages() {
+        
     }
 
-    //TODO make this method throw and handle it in the viewcontroller
     func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
@@ -67,17 +70,16 @@ class FetchHandler {
         }
     }
     
-    //TODO make this method throw and handle it in the viewcontroller
     func fetchExercises(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         let exerciseService = ExerciseService(
             apiHandler: apiHandler
         )
-        exerciseService.getNextExercises() { [weak self] (exercicesResult) in
+        exerciseService.getNextExercises() { [weak self] (exercisesResult) in
             guard let self = self else {
                 return
             }
-            switch exercicesResult {
+            switch exercisesResult {
             case .success(let fetchedExercises):
                 self.exercises = Set(fetchedExercises)
             case .failure(let error):
@@ -87,7 +89,6 @@ class FetchHandler {
         }
     }
     
-    //TODO make this method throw and handle it in the viewcontroller
     func fetchMuscles(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         let muscleService = MuscleService(
@@ -110,7 +111,6 @@ class FetchHandler {
         }
     }
     
-    //TODO make this method throw and handle it in the viewcontroller
     func fetchEquipment(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
@@ -135,8 +135,7 @@ class FetchHandler {
         }
     }
     
-    private func addExercises(exercices: [Exercise]) {
+    private func addExercises(exercises: [Exercise]) {
         self.exercises.union(exercises)
     }
-        
 }

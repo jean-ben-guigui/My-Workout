@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ExercicesViewController: UIViewController {
+class ExercisesViewController: UIViewController {
     
     enum Section {
         case main
     }
     
     @IBOutlet private weak var exerciseTableView: UITableView!
-    private var exercises:[ExerciseViewModel] = []
+    private var exercises: Set<ExerciseViewModel>?
     private var dataSource: UITableViewDiffableDataSource<Section, ExerciseViewModel>?
     
     
@@ -24,18 +24,13 @@ class ExercicesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         DispatchQueue.global(qos: .userInitiated).async {
-            let fetchHandler = FetchHandler()
-            fetchHandler.loadData() { (exercisesViewModelResult) in
+            let fetchHandler = FetchExerciseManager()
+            fetchHandler.loadData() { (exercisesViewModel) in
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else {
                         return
                     }
-                    switch exercisesViewModelResult {
-                    case .success(let exercisesViewModel):
-                        self.configureDataSource(display: exercisesViewModel)
-                    case .failure(_):
-                        return
-                    }
+                    self.configureDataSource(display: exercisesViewModel)
                 }
             }
         }
@@ -52,7 +47,7 @@ class ExercicesViewController: UIViewController {
     }
     
     // MARK: - DataSource
-    func configureDataSource(display exercises: [ExerciseViewModel]) {
+    func configureDataSource(display exercises: Set<ExerciseViewModel>) {
         dataSource = UITableViewDiffableDataSource<Section, ExerciseViewModel>(tableView: exerciseTableView) {
             [unowned self] (tableView, indexPath, exerciseViewModel) -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath)
@@ -63,7 +58,7 @@ class ExercicesViewController: UIViewController {
         }
         var snapshot = NSDiffableDataSourceSnapshot<Section, ExerciseViewModel>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(exercises)
+        snapshot.appendItems(Array(exercises))
         dataSource?.apply(snapshot, animatingDifferences: false)
     }
     

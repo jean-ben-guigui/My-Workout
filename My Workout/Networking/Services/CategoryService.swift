@@ -23,7 +23,7 @@ struct CategoryService {
     }
     
     func getAll(completionHandler: @escaping ((Result<[Category], NetworkError>) -> Void)) {
-        let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.path.category)
+        let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.Path.category)
         if let url = url {
             getPages(from: url) {
                 completionHandler($0)

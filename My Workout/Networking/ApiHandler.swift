@@ -25,6 +25,18 @@ struct ApiHandler {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
+        components.queryItems?.append(
+            URLQueryItem(
+                name: Constants.Query.ApprovedExercisesQuery.name,
+                value: Constants.Query.ApprovedExercisesQuery.value
+            )
+        )
+        components.queryItems?.append(
+            URLQueryItem(
+                name: Constants.Query.LanguageEnglishQuery.name,
+                value: Constants.Query.LanguageEnglishQuery.value
+            )
+        )
         if let queries = queries {
             for query in queries {
                 components.queryItems?.append(URLQueryItem(name: query.key, value: query.value))

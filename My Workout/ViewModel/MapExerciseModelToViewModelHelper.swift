@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MapExerciseModelToViewModelHelper {
+struct MapModelToViewModelHelper {
     func getTextTodisplay(for name: String, from array: [Int]?, using dictionnary: [Int: String]) -> String? {
         if let array = array, array.count > 0 {
             var string = "\(name): "

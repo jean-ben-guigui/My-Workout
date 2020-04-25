@@ -32,7 +32,7 @@
 		D6CFE33B2451FC55001939F9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33A2451FC55001939F9 /* Category.swift */; };
 		D6CFE33D2452035F001939F9 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33C2452035F001939F9 /* CategoryService.swift */; };
 		D6CFE3402452C403001939F9 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33F2452C403001939F9 /* ImageService.swift */; };
-		D6CFE3422452CD21001939F9 /* FetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3412452CD21001939F9 /* FetchHandler.swift */; };
+		D6CFE3422452CD21001939F9 /* FetchExerciceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */; };
 		D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3432452D039001939F9 /* MuscleService.swift */; };
 		D6CFE346245302CD001939F9 /* EndpointPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE345245302CD001939F9 /* EndpointPage.swift */; };
 /* End PBXBuildFile section */
@@ -86,7 +86,7 @@
 		D6CFE33A2451FC55001939F9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D6CFE33C2452035F001939F9 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		D6CFE33F2452C403001939F9 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
-		D6CFE3412452CD21001939F9 /* FetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchHandler.swift; sourceTree = "<group>"; };
+		D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciceManager.swift; sourceTree = "<group>"; };
 		D6CFE3432452D039001939F9 /* MuscleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleService.swift; sourceTree = "<group>"; };
 		D6CFE345245302CD001939F9 /* EndpointPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				D6CFE3382451FAC0001939F9 /* ExerciceViewModel.swift */,
-				D6CFE3412452CD21001939F9 /* FetchHandler.swift */,
+				D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */,
 				D67C287424543A230079EC84 /* MapExerciseModelToViewModelHelper.swift */,
 			);
 			path = ViewModel;
@@ -392,7 +392,7 @@
 				D67623392453983600843F98 /* EquipmentService.swift in Sources */,
 				D6CFE3392451FAC0001939F9 /* ExerciceViewModel.swift in Sources */,
 				D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */,
-				D6CFE3422452CD21001939F9 /* FetchHandler.swift in Sources */,
+				D6CFE3422452CD21001939F9 /* FetchExerciceManager.swift in Sources */,
 				D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */,
 				D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */,
 				D67C287524543A230079EC84 /* MapExerciseModelToViewModelHelper.swift in Sources */,

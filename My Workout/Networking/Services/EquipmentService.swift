@@ -23,7 +23,7 @@ struct EquipmentService {
     }
     
     func getAll(completionHandler: @escaping ((Result<[Equipment], NetworkError>) -> Void)) {
-        let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.path.muscle)
+        let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.Path.muscle)
         if let url = url {
             endpointServiceHelper.getPages(from: url, completionHandler: completionHandler)
         }
