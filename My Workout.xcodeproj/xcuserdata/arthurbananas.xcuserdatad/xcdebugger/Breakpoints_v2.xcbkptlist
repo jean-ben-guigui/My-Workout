@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3C922E35-2D9D-40A2-B47A-2C1449C8E71D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAA22F11-CF48-453D-8412-88A41DC2DAC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D67E121F-8CBC-4FBD-9F66-45CD0B344563"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52261FC7-C11E-49B2-8E6D-4C6BB1E6534E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58367DE8-4B70-4FCF-B0CD-0B7F541CB60E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getExercises(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50F35325-B242-4757-93E2-5A7D3E3FB2D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getExercises(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C01DB382-A13A-4FB3-B75C-4E7563FED6F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/CategoryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getAll(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADD18055-562C-4B7F-AD4C-24C1EF705907"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/CategoryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getPages(from:andAddItTo:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ADD18055-562C-4B7F-AD4C-24C1EF705907 - 5226aea548b69b54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.CategoryService.(getPages in _91E3BE2436A6C19F2B40A94E287EF573)(from: Foundation.URL, andAddItTo: Swift.Array&lt;My_Workout.Category&gt;, completionHandler: Swift.Optional&lt;(Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/CategoryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "138">
+               </Location>
+               <Location
+                  uuid = "ADD18055-562C-4B7F-AD4C-24C1EF705907 - 301fa2913a423307"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.CategoryService.(getPages in _91E3BE2436A6C19F2B40A94E287EF573)(from: Foundation.URL, andAddItTo: Swift.Array&lt;My_Workout.Category&gt;, completionHandler: Swift.Optional&lt;(Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/CategoryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "307">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFC3E910-4D20-4FEB-ACC6-50A7E198829B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/CategoryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getAll(completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BFC3E910-4D20-4FEB-ACC6-50A7E198829B - a825cd8bc240b583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.CategoryService.getAll(completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/CategoryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "BFC3E910-4D20-4FEB-ACC6-50A7E198829B - 2c1401ab00018bb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.CategoryService.getAll(completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/CategoryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "307">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3E20A23-D7B9-47FA-A66B-93C277AFCD82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B3E20A23-D7B9-47FA-A66B-93C277AFCD82 - c2ce0bfa0c7bcf85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.ExercicesViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Controller/ExercicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "B3E20A23-D7B9-47FA-A66B-93C277AFCD82 - b737143cfaf94937"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseViewModel&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExercicesViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Controller/ExercicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC0BFDC3-4877-4716-BF63-DDC45D166EBE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B292165-E3C7-48FA-BEB1-1DE1BB452DDB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B2F231A-7C87-4392-91A8-8404AEF837F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64648BB1-7CE7-42EF-A3C0-9234627E48A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA424771-EF53-4D23-9ECC-6B23F966917A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadData(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17689DF8-4595-4E5F-A2CC-1B6B559C10BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadData(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F898021B-3AD1-4011-9F93-A6FACA44EB6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA5739D9-FFCB-4A4E-935D-C0BA0E4806E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA5739D9-FFCB-4A4E-935D-C0BA0E4806E8 - c9f9ecef26cf0ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.FetchHandler.fetchCategories(dispatchGroup: __C.OS_dispatch_group) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "DA5739D9-FFCB-4A4E-935D-C0BA0E4806E8 - afaf3126d85ad861"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchHandler.fetchCategories(dispatchGroup: __C.OS_dispatch_group) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "250">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD6A22A4-3CD8-4B32-A32D-439F601CAE14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "fetchCategories(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AD6A22A4-3CD8-4B32-A32D-439F601CAE14 - c9f9ecef26cf0ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.FetchHandler.fetchCategories(dispatchGroup: __C.OS_dispatch_group) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "AD6A22A4-3CD8-4B32-A32D-439F601CAE14 - afaf3126d85ad861"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.Category&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchHandler.fetchCategories(dispatchGroup: __C.OS_dispatch_group) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "250">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90E5642B-6127-4479-AD34-41EF5C28DA99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loadData(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BA2BDE5-251C-4D7C-B73A-18AA345F1391"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "fetchExercises(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62AB6353-816A-4847-B0C9-53D3091744EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "fetchMuscles(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "593B3C52-D18F-4A9D-A9C1-D5324E726931"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getNextExercises(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB31C051-1964-4701-A3CE-A326FB172238"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getNextExercises(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28B7954F-327C-4175-8032-B308E18ABEA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getNextExercises(completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "28B7954F-327C-4175-8032-B308E18ABEA6 - bc191a5e4832e696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;My_Workout.EndpointPage&lt;My_Workout.Exercise&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseService.getNextExercises(completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.Exercise&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "307">
+               </Location>
+               <Location
+                  uuid = "28B7954F-327C-4175-8032-B308E18ABEA6 - bc191a5e4832e696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;My_Workout.EndpointPage&lt;My_Workout.Exercise&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseService.getNextExercises(completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.Exercise&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "345">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AAE8AB8-13C3-44A4-A3CD-58923ABE12F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getNextExercises(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CC0F00D-326F-487C-A880-1B3AB3CA4174"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/EndpointServiceHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getNextPage(from:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CC0F00D-326F-487C-A880-1B3AB3CA4174 - f70c9c483955879a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.EndpointServiceHelper.getNextPage(from: Foundation.URL, completionHandler: (Swift.Result&lt;My_Workout.EndpointPage&lt;A&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/EndpointServiceHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "281">
+               </Location>
+               <Location
+                  uuid = "4CC0F00D-326F-487C-A880-1B3AB3CA4174 - f70c9c483955879a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.EndpointServiceHelper.getNextPage(from: Foundation.URL, completionHandler: (Swift.Result&lt;My_Workout.EndpointPage&lt;A&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/EndpointServiceHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "313">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC2C3CF8-006C-4782-BA90-C342AB968AB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/EndpointServiceHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "getNextPage(from:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC2C3CF8-006C-4782-BA90-C342AB968AB8 - f70c9c483955879a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.EndpointServiceHelper.getNextPage(from: Foundation.URL, completionHandler: (Swift.Result&lt;My_Workout.EndpointPage&lt;A&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/EndpointServiceHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "367">
+               </Location>
+               <Location
+                  uuid = "AC2C3CF8-006C-4782-BA90-C342AB968AB8 - e25f3dd2e52455d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;My_Workout.EndpointPage&lt;A&gt;, My_Workout.NetworkError&gt;) -&gt; () in closure #1 (Swift.Result&lt;Foundation.Data, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.EndpointServiceHelper.getNextPage(from: Foundation.URL, completionHandler: (Swift.Result&lt;My_Workout.EndpointPage&lt;A&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/EndpointServiceHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "229">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7309AEAB-C7D5-48D7-8E8F-3DCA2E3F9199"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/EndpointServiceHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getNextPage(from:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9D050FA-E510-433F-AFD2-79211600C4AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/EndpointServiceHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getNextPage(from:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83A03C3C-DA84-48BA-9E8F-20A947504158"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/EndpointServiceHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "getNextPage(from:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

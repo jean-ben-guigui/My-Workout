@@ -9,12 +9,31 @@
 /* Begin PBXBuildFile section */
 		D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20D24506E0400381CC4 /* AppDelegate.swift */; };
 		D669D21024506E0400381CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20F24506E0400381CC4 /* SceneDelegate.swift */; };
-		D669D21224506E0400381CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D21124506E0400381CC4 /* ViewController.swift */; };
 		D669D21524506E0400381CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669D21324506E0400381CC4 /* Main.storyboard */; };
 		D669D21724506E0C00381CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D669D21624506E0C00381CC4 /* Assets.xcassets */; };
 		D669D21A24506E0C00381CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669D21824506E0C00381CC4 /* LaunchScreen.storyboard */; };
 		D669D22524506E0C00381CC4 /* My_WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D22424506E0C00381CC4 /* My_WorkoutTests.swift */; };
 		D669D23024506E0C00381CC4 /* My_WorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D22F24506E0C00381CC4 /* My_WorkoutUITests.swift */; };
+		D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24124509BBD00381CC4 /* ApiHandler.swift */; };
+		D669D24424509C3F00381CC4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24324509C3F00381CC4 /* NetworkError.swift */; };
+		D669D2462450A21100381CC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2452450A21100381CC4 /* Constants.swift */; };
+		D669D24F24518DF200381CC4 /* ExercicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24E24518DF200381CC4 /* ExercicesViewController.swift */; };
+		D669D2512451902B00381CC4 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2502451902B00381CC4 /* Exercise.swift */; };
+		D669D2552451BA6400381CC4 /* ExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2542451BA6400381CC4 /* ExerciseService.swift */; };
+		D669D2582451D3B300381CC4 /* ParseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2572451D3B300381CC4 /* ParseHandler.swift */; };
+		D669D25A2451F38500381CC4 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2592451F38500381CC4 /* Muscle.swift */; };
+		D673638D2453454A00F84C8C /* EndpointServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D673638C2453454A00F84C8C /* EndpointServiceHelper.swift */; };
+		D673639124534FAD00F84C8C /* WgerAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */; };
+		D6762337245397FA00843F98 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6762336245397FA00843F98 /* Equipment.swift */; };
+		D67623392453983600843F98 /* EquipmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67623382453983600843F98 /* EquipmentService.swift */; };
+		D67C28702453A5030079EC84 /* ArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C286F2453A5030079EC84 /* ArrayHelper.swift */; };
+		D6CFE3392451FAC0001939F9 /* ExerciceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3382451FAC0001939F9 /* ExerciceViewModel.swift */; };
+		D6CFE33B2451FC55001939F9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33A2451FC55001939F9 /* Category.swift */; };
+		D6CFE33D2452035F001939F9 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33C2452035F001939F9 /* CategoryService.swift */; };
+		D6CFE3402452C403001939F9 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33F2452C403001939F9 /* ImageService.swift */; };
+		D6CFE3422452CD21001939F9 /* FetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3412452CD21001939F9 /* FetchHandler.swift */; };
+		D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3432452D039001939F9 /* MuscleService.swift */; };
+		D6CFE346245302CD001939F9 /* EndpointPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE345245302CD001939F9 /* EndpointPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +57,6 @@
 		D669D20A24506E0400381CC4 /* My Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D669D20D24506E0400381CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D669D20F24506E0400381CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D669D21124506E0400381CC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D669D21424506E0400381CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D669D21624506E0C00381CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D669D21924506E0C00381CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,26 @@
 		D669D22B24506E0C00381CC4 /* My WorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My WorkoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D669D22F24506E0C00381CC4 /* My_WorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_WorkoutUITests.swift; sourceTree = "<group>"; };
 		D669D23124506E0C00381CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D669D24124509BBD00381CC4 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		D669D24324509C3F00381CC4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D669D2452450A21100381CC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D669D24E24518DF200381CC4 /* ExercicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicesViewController.swift; sourceTree = "<group>"; };
+		D669D2502451902B00381CC4 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		D669D2542451BA6400381CC4 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
+		D669D2572451D3B300381CC4 /* ParseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHandler.swift; sourceTree = "<group>"; };
+		D669D2592451F38500381CC4 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
+		D673638C2453454A00F84C8C /* EndpointServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointServiceHelper.swift; sourceTree = "<group>"; };
+		D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WgerAPIEndpoint.swift; sourceTree = "<group>"; };
+		D6762336245397FA00843F98 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		D67623382453983600843F98 /* EquipmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentService.swift; sourceTree = "<group>"; };
+		D67C286F2453A5030079EC84 /* ArrayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHelper.swift; sourceTree = "<group>"; };
+		D6CFE3382451FAC0001939F9 /* ExerciceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceViewModel.swift; sourceTree = "<group>"; };
+		D6CFE33A2451FC55001939F9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D6CFE33C2452035F001939F9 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		D6CFE33F2452C403001939F9 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		D6CFE3412452CD21001939F9 /* FetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchHandler.swift; sourceTree = "<group>"; };
+		D6CFE3432452D039001939F9 /* MuscleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleService.swift; sourceTree = "<group>"; };
+		D6CFE345245302CD001939F9 /* EndpointPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +137,13 @@
 		D669D20C24506E0400381CC4 /* My Workout */ = {
 			isa = PBXGroup;
 			children = (
-				D669D20D24506E0400381CC4 /* AppDelegate.swift */,
-				D669D20F24506E0400381CC4 /* SceneDelegate.swift */,
-				D669D21124506E0400381CC4 /* ViewController.swift */,
-				D669D21324506E0400381CC4 /* Main.storyboard */,
-				D669D21624506E0C00381CC4 /* Assets.xcassets */,
-				D669D21824506E0C00381CC4 /* LaunchScreen.storyboard */,
-				D669D21B24506E0C00381CC4 /* Info.plist */,
+				D6CFE3372451FAA7001939F9 /* ViewModel */,
+				D669D23D24507D1F00381CC4 /* Model */,
+				D669D2562451D36A00381CC4 /* Networking */,
+				D669D24B2451846D00381CC4 /* Resources */,
+				D669D24024508FF300381CC4 /* Supporting files */,
+				D669D23F24507D6500381CC4 /* Controller */,
+				D669D23E24507D2900381CC4 /* View */,
 			);
 			path = "My Workout";
 			sourceTree = "<group>";
@@ -126,6 +164,89 @@
 				D669D23124506E0C00381CC4 /* Info.plist */,
 			);
 			path = "My WorkoutUITests";
+			sourceTree = "<group>";
+		};
+		D669D23D24507D1F00381CC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D669D2452450A21100381CC4 /* Constants.swift */,
+				D669D2502451902B00381CC4 /* Exercise.swift */,
+				D6762336245397FA00843F98 /* Equipment.swift */,
+				D669D2592451F38500381CC4 /* Muscle.swift */,
+				D6CFE33A2451FC55001939F9 /* Category.swift */,
+				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
+				D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D669D23E24507D2900381CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D669D21824506E0C00381CC4 /* LaunchScreen.storyboard */,
+				D669D21324506E0400381CC4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D669D23F24507D6500381CC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D669D24E24518DF200381CC4 /* ExercicesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D669D24024508FF300381CC4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D669D20D24506E0400381CC4 /* AppDelegate.swift */,
+				D669D20F24506E0400381CC4 /* SceneDelegate.swift */,
+				D669D21624506E0C00381CC4 /* Assets.xcassets */,
+				D669D21B24506E0C00381CC4 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D669D24B2451846D00381CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D669D2562451D36A00381CC4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D6CFE33E24520369001939F9 /* Services */,
+				D669D24124509BBD00381CC4 /* ApiHandler.swift */,
+				D669D2572451D3B300381CC4 /* ParseHandler.swift */,
+				D669D24324509C3F00381CC4 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D6CFE3372451FAA7001939F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6CFE3382451FAC0001939F9 /* ExerciceViewModel.swift */,
+				D6CFE3412452CD21001939F9 /* FetchHandler.swift */,
+				D67C286F2453A5030079EC84 /* ArrayHelper.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6CFE33E24520369001939F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D669D2542451BA6400381CC4 /* ExerciseService.swift */,
+				D6CFE3432452D039001939F9 /* MuscleService.swift */,
+				D6CFE33C2452035F001939F9 /* CategoryService.swift */,
+				D6CFE33F2452C403001939F9 /* ImageService.swift */,
+				D673638C2453454A00F84C8C /* EndpointServiceHelper.swift */,
+				D67623382453983600843F98 /* EquipmentService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +380,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D669D21224506E0400381CC4 /* ViewController.swift in Sources */,
+				D669D2552451BA6400381CC4 /* ExerciseService.swift in Sources */,
+				D669D2512451902B00381CC4 /* Exercise.swift in Sources */,
+				D669D25A2451F38500381CC4 /* Muscle.swift in Sources */,
+				D6CFE33D2452035F001939F9 /* CategoryService.swift in Sources */,
+				D673638D2453454A00F84C8C /* EndpointServiceHelper.swift in Sources */,
+				D67623392453983600843F98 /* EquipmentService.swift in Sources */,
+				D6CFE3392451FAC0001939F9 /* ExerciceViewModel.swift in Sources */,
 				D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */,
+				D6CFE3422452CD21001939F9 /* FetchHandler.swift in Sources */,
+				D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */,
+				D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */,
 				D669D21024506E0400381CC4 /* SceneDelegate.swift in Sources */,
+				D669D24424509C3F00381CC4 /* NetworkError.swift in Sources */,
+				D6CFE346245302CD001939F9 /* EndpointPage.swift in Sources */,
+				D673639124534FAD00F84C8C /* WgerAPIEndpoint.swift in Sources */,
+				D6762337245397FA00843F98 /* Equipment.swift in Sources */,
+				D669D24F24518DF200381CC4 /* ExercicesViewController.swift in Sources */,
+				D669D2462450A21100381CC4 /* Constants.swift in Sources */,
+				D669D2582451D3B300381CC4 /* ParseHandler.swift in Sources */,
+				D6CFE33B2451FC55001939F9 /* Category.swift in Sources */,
+				D6CFE3402452C403001939F9 /* ImageService.swift in Sources */,
+				D67C28702453A5030079EC84 /* ArrayHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My Workout/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/My Workout/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My Workout/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/My Workout/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
