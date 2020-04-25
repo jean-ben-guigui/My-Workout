@@ -17,21 +17,29 @@ struct ExerciseViewModel {
     let primaryMuscles: String?
     let secondaryMuscles: String?
     let equipment: String?
+    let category: String?
     
     init(exercise: Exercise, allMuscles: [Int: String], allCategories: [Int: String], allEquipment: [Int: String]) {
         self.id = exercise.id
-        self.name = exercise.name
-        self.description = exercise.description
+        self.name = "Name: \(exercise.name)"
+        if let description = exercise.description {
+            self.description = "Description: \(description)"
+        } else {
+            self.description = nil
+        }
+        if let categoryId = exercise.category, let category = allCategories[categoryId] {
+            self.category = "Category: \(category)"
+        } else {
+            self.category = nil
+        }
         
-        let arrayHelper = ArrayHelper()
-        self.primaryMuscles = arrayHelper.stringFromArray(exercise.muscles, using: allMuscles)
-        self.secondaryMuscles = arrayHelper.stringFromArray(exercise.muscles_secondary, using: allMuscles)
-        self.equipment = arrayHelper.stringFromArray(exercise.equipment, using: allEquipment)
+        let mapExerciseModelToViewModelHelper = MapExerciseModelToViewModelHelper()
         
+        self.primaryMuscles = mapExerciseModelToViewModelHelper.getTextTodisplay(for: "Primary Muscles", from: exercise.muscles, using: allMuscles)
+        self.secondaryMuscles = mapExerciseModelToViewModelHelper.getTextTodisplay(for: "Secondary Muscles", from: exercise.muscles_secondary, using: allMuscles)
+        self.equipment = mapExerciseModelToViewModelHelper.getTextTodisplay(for: "Equipment", from: exercise.equipment, using: allEquipment)
         self.image = nil
     }
-    
-    
 }
 
 extension ExerciseViewModel: Hashable {
@@ -43,3 +51,5 @@ extension ExerciseViewModel: Hashable {
         return lhs.id == rhs.id
     }
 }
+
+

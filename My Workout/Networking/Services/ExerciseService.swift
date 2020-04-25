@@ -39,27 +39,4 @@ class ExerciseService {
             completionHandler(.failure(.urlInit))
         }
     }
-    
-//    private func parseExercise(_ exercise: Data, completionHandler: ((Result<[Exercise], NetworkError>) -> Void)?) {
-//        parseHandler.parseData(exercise) { [weak self] (EndpointPageResult) in
-//            switch EndpointPageResult {
-//            case .success(let EndpointPage):
-//                self?.nextExercicesUrl = EndpointPage.nextPageUrl
-//            case .failure(let error):
-//                completionHandler?(.failure(error))
-//            }
-//        }
-//    }
-    
-//    func getImagesLink(
-//        exerciseId: Int,
-//        completionHandler: @escaping ((Result<[String], NetworkError>) -> Void)) {
-//        let queries = ["exercice": String(exerciseId)]
-//        let url = apiHandler.createRequest(
-//            host: "wger.de",
-//            path: "/api/v2/exerciseimage/",
-//            queries: queries
-//        )
-////        apiHandler.getData(
-//    }
 }

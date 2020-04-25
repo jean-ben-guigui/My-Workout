@@ -39,7 +39,6 @@ class FetchHandler {
             exercisesViewModel.append(exerciseViewModel)
         }
         
-        
         completionHandler(.success(exercisesViewModel))
     }
 

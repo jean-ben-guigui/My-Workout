@@ -12,7 +12,7 @@ import UIKit
 struct Exercise: WgerAPIEndpoint {
     let id: Int
     let name: String
-    let category: Int
+    let category: Int?
     let equipment: [Int]?
     let muscles: [Int]?
     let muscles_secondary: [Int]?

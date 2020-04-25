@@ -9,18 +9,36 @@
 import UIKit
 
 class ExercicesViewController: UIViewController {
-    let exercises:[Exercise] = []
+    
+    enum Section {
+        case main
+    }
+    
+    @IBOutlet private weak var exerciseTableView: UITableView!
+    private var exercises:[ExerciseViewModel] = []
+    private var dataSource: UITableViewDiffableDataSource<Section, ExerciseViewModel>?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let fetchHandler = FetchHandler()
-//        DispatchQueue.global(qos: .userInitiated).async {
-        fetchHandler.loadData() { (bien) in
-            print("BIIIIIIIIIIEN")
+        DispatchQueue.global(qos: .userInitiated).async {
+            let fetchHandler = FetchHandler()
+            fetchHandler.loadData() { (exercisesViewModelResult) in
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else {
+                        return
+                    }
+                    switch exercisesViewModelResult {
+                    case .success(let exercisesViewModel):
+                        self.configureDataSource(display: exercisesViewModel)
+                    case .failure(_):
+                        return
+                    }
+                }
+            }
         }
-//        }
     }
     
 
@@ -33,13 +51,34 @@ class ExercicesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     
-
+    // MARK: - DataSource
+    func configureDataSource(display exercises: [ExerciseViewModel]) {
+        dataSource = UITableViewDiffableDataSource<Section, ExerciseViewModel>(tableView: exerciseTableView) {
+            [unowned self] (tableView, indexPath, exerciseViewModel) -> UITableViewCell? in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath)
+            if let cell = cell as? ExerciseCell {
+                self.configureExerciseCell(cell: cell, exercise: exerciseViewModel)
+            }
+            return cell
+        }
+        var snapshot = NSDiffableDataSourceSnapshot<Section, ExerciseViewModel>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(exercises)
+        dataSource?.apply(snapshot, animatingDifferences: false)
+    }
+    
+    func addPageToExerciseTableView() {
+        
+    }
+    
+    func configureExerciseCell(cell: ExerciseCell, exercise: ExerciseViewModel) {
+        cell.categoryLabel.text = exercise.category
+        cell.nameLabel.text = exercise.name
+        cell.equiplentLabel.text = exercise.equipment
+        cell.primaryMusclesLabel.text = exercise.primaryMuscles
+        cell.secondaryMusclesLabel.text = exercise.secondaryMuscles
+    }
+    
+    //MARK: -  Delegate
+    
 }
-
-//I probably don't need that.
-//TODO erase it if not needed.
-//extension ExercicesViewController: URLSessionDelegate {
-//    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-//        print("did receive challenge")
-//    }
-//}
