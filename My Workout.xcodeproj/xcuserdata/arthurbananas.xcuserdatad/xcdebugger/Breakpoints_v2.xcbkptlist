@@ -14,8 +14,8 @@
             filePath = "My Workout/Controller/ExercicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "My Workout/Controller/ExercicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -654,8 +654,8 @@
             filePath = "My Workout/Controller/ExercicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "configureDataSource(display:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -686,8 +686,8 @@
             filePath = "My Workout/Controller/ExercicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -734,9 +734,793 @@
             filePath = "My Workout/Networking/ApiHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "createRequest(host:path:queries:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F53A068C-0AA8-429C-B433-C40068C7B039"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "downloadImages(dispatchGroup:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08A87C62-2955-46E1-8902-9B939A328E29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "downloadImages(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "08A87C62-2955-46E1-8902-9B939A328E29 - e4f95477097835c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "938">
+               </Location>
+               <Location
+                  uuid = "08A87C62-2955-46E1-8902-9B939A328E29 - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "365">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F996BBE-4B07-48BE-AB8D-899F34A6CC9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "downloadImages(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F996BBE-4B07-48BE-AB8D-899F34A6CC9C - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "515">
+               </Location>
+               <Location
+                  uuid = "8F996BBE-4B07-48BE-AB8D-899F34A6CC9C - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "543">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9072463-FAD7-4032-AEDA-291A71103614"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "downloadImages(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9072463-FAD7-4032-AEDA-291A71103614 - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "515">
+               </Location>
+               <Location
+                  uuid = "D9072463-FAD7-4032-AEDA-291A71103614 - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "543">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D478125B-365C-4947-8B59-BCC0F6E6212B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "downloadImages(dispatchGroup:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D478125B-365C-4947-8B59-BCC0F6E6212B - db3afe4c0943f482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "587">
+               </Location>
+               <Location
+                  uuid = "D478125B-365C-4947-8B59-BCC0F6E6212B - 2858a14c752cad0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (My_Workout.ExerciseViewModel) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.FetchExerciseManager.downloadImages(completionHandler: (Swift.Result&lt;My_Workout.ExerciseViewModel, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/ViewModel/FetchExerciceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FC2F98F-64E5-4976-80AF-82EDB437DDBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FC2F98F-64E5-4976-80AF-82EDB437DDBD - 6cf7bf9807b17c75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "97">
+               </Location>
+               <Location
+                  uuid = "8FC2F98F-64E5-4976-80AF-82EDB437DDBD - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "318">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19626C69-665F-4E1F-A0AF-B1ED7073DBD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19626C69-665F-4E1F-A0AF-B1ED7073DBD8 - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "318">
+               </Location>
+               <Location
+                  uuid = "19626C69-665F-4E1F-A0AF-B1ED7073DBD8 - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37BFEB75-EFDF-4D1C-B863-4BF45D826564"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getAllImagesLink(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37BFEB75-EFDF-4D1C-B863-4BF45D826564 - c1233c19473620fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.ExerciseImageService.getAllImagesLink(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "37BFEB75-EFDF-4D1C-B863-4BF45D826564 - 858390422b27a41d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getAllImagesLink(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "166AAE1A-DDB4-47DC-B649-C6441D28B549"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CF66BC2-2868-4701-A509-CDC2107ACC92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9CF66BC2-2868-4701-A509-CDC2107ACC92 - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "593">
+               </Location>
+               <Location
+                  uuid = "9CF66BC2-2868-4701-A509-CDC2107ACC92 - 97e51fb89efccd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD7B52A1-B3AE-4C8E-923A-53E9141EB86A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EA8DD94-373D-4CCE-B46C-B360EBA24FEF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C432250-7F81-4E10-A6B1-AD53F63F86FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5F3C0A1-953C-439B-9D8E-2D58D831A9D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getAllImagesLink(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90C09239-7239-4676-9D54-9EC1735334DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getAllImagesLink(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B732DB0C-C29A-48BE-93A8-1B1DCBFEC9AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B732DB0C-C29A-48BE-93A8-1B1DCBFEC9AC - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "318">
+               </Location>
+               <Location
+                  uuid = "B732DB0C-C29A-48BE-93A8-1B1DCBFEC9AC - ed88a045e7319909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseImage&gt;, My_Workout.NetworkError&gt;) -&gt; () in My_Workout.ExerciseImageService.getRandomImage(for: My_Workout.Exercise, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1E42F8A-37FC-4528-9A38-A1BDDCFD7A2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "599880C7-CDB0-4F16-8185-81E28D190795"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "599880C7-CDB0-4F16-8185-81E28D190795 - 48151fd50fddc4d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Workout.ExerciseImageService.downloadImage(url: Foundation.URL, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "213">
+               </Location>
+               <Location
+                  uuid = "599880C7-CDB0-4F16-8185-81E28D190795 - 27ddd3262a267e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in My_Workout.ExerciseImageService.downloadImage(url: Foundation.URL, completionHandler: (Swift.Result&lt;Swift.Optional&lt;__C.UIImage&gt;, My_Workout.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Workout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Networking/Services/ExerciseImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47761213-512D-4955-8C97-0D8E13730B5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0E02275-41D4-4FD4-A14E-93841203E6F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/ParseHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "parseData(_:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46CF31B4-BCEE-4C8B-A89D-BF66C597BFD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C48B57C-D508-4FF2-B8E3-53FDC3F7BD14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B11C25B9-9BA7-4DC3-867E-B7C8B4BD4EAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00BCC420-6FCE-488E-BA3C-EA3604310402"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "downloadImage(url:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7274755E-318E-4030-917F-682B864908D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C66F728A-49FA-44B6-9A1A-EFA76FE0ADD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/Services/ExerciseImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getRandomImage(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BECEBC8-CC13-4D41-805C-14709D0C8CF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "configureExerciseCell(cell:exercise:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B395B743-0E27-4296-9542-4EAF8A1C3DB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Controller/ExercicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "configureExerciseCell(cell:exercise:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2806C601-1E29-4529-94C8-2B32EC9C0302"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/ViewModel/FetchExerciceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "downloadImages(dispatchGroup:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

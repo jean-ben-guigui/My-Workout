@@ -15,7 +15,6 @@ class ExercisesViewController: UIViewController {
     }
     
     @IBOutlet private weak var exerciseTableView: UITableView!
-    private var exercises: Set<ExerciseViewModel>?
     private var dataSource: UITableViewDiffableDataSource<Section, ExerciseViewModel>?
     
     
@@ -24,13 +23,20 @@ class ExercisesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         DispatchQueue.global(qos: .userInitiated).async {
-            let fetchHandler = FetchExerciseManager()
-            fetchHandler.loadData() { (exercisesViewModel) in
+            let fetchExerciseManager = FetchExerciseManager()
+            fetchExerciseManager.loadData() { (exercisesViewModel) in
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else {
                         return
                     }
                     self.configureDataSource(display: exercisesViewModel)
+//                    DispatchQueue.global(qos: .userInitiated).async {
+//                        fetchExerciseManager.downloadImages() { (exerciseViewModel) in
+//                            DispatchQueue.main.async { [weak self] in
+//                                self?.updateDataSource()
+//                            }
+//                        }
+//                    }
                 }
             }
         }
@@ -62,7 +68,18 @@ class ExercisesViewController: UIViewController {
         dataSource?.apply(snapshot, animatingDifferences: false)
     }
     
+//    func updateDataSource(exerciceViewModel: ExerciseViewModel) {
+//        guard let currentSnapshot = dataSource?.snapshot() else {
+//            return
+//        }
+//        currentSnapshot.indexOfItem(<#T##identifier: ExerciseViewModel##ExerciseViewModel#>)
+//    }
+    
     func addPageToExerciseTableView() {
+        
+    }
+    
+    func downloadImages(for exercises: Set<ExerciseViewModel>) {
         
     }
     
@@ -72,6 +89,9 @@ class ExercisesViewController: UIViewController {
         cell.equiplentLabel.text = exercise.equipment
         cell.primaryMusclesLabel.text = exercise.primaryMuscles
         cell.secondaryMusclesLabel.text = exercise.secondaryMuscles
+        if let image = exercise.image {
+            cell.exerciseImage.image = image
+        }
     }
     
     //MARK: -  Delegate

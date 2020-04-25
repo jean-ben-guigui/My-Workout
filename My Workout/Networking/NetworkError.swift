@@ -12,4 +12,6 @@ public enum NetworkError: Error {
     case JSONDecoding(_ error: Error?)
     case urlInit
     case noData
+    case downloadFailed
+    case noImage
 }

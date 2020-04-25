@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ApiHandler {
+struct ApiHandler {    
     func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
         
             let request = URLRequest(url: url)
@@ -25,6 +25,8 @@ struct ApiHandler {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
+        components.path = path
+        
         let ApprovedExercisesQuery = URLQueryItem(
             name: Constants.Query.ApprovedExercisesQuery.name,
             value: Constants.Query.ApprovedExercisesQuery.value
@@ -34,6 +36,7 @@ struct ApiHandler {
             value: Constants.Query.LanguageEnglishQuery.value
         )
         components.queryItems = [ApprovedExercisesQuery, englishQueryItem]
+        
         if let queries = queries {
             if var queryItems = components.queryItems {
                 for query in queries {
@@ -48,7 +51,7 @@ struct ApiHandler {
                 components.queryItems = queryItems
             }
         }
-        components.path = path
+        
         guard let url = components.url else {
             return nil
         }

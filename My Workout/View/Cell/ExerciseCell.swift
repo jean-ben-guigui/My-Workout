@@ -16,4 +16,5 @@ class ExerciseCell: UITableViewCell {
     @IBOutlet weak var equiplentLabel: UILabel!
     @IBOutlet weak var primaryMusclesLabel: UILabel!
     @IBOutlet weak var secondaryMusclesLabel: UILabel!
+    @IBOutlet weak var exerciseImage: UIImageView!
 }

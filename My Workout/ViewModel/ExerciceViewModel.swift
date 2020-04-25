@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 struct ExerciseViewModel {
-    private let id: Int
+    let id: Int
     let name: String?
     let description: String?
-    let image: UIImage?
+    var image: UIImage?
     let primaryMuscles: String?
     let secondaryMuscles: String?
     let equipment: String?

@@ -10,16 +10,16 @@ import Foundation
 
 struct MuscleService {
     typealias MusclePage = EndpointPage<Muscle>
-    typealias MucleServiceHelper = EndpointServiceHelper<Muscle>
+    typealias MuscleServiceHelper = EndpointServiceHelper<Muscle>
     
     let apiHandler: ApiHandler
     let parseHandler: ParseHandler<Muscle>
-    let endpointServiceHelper: EndpointServiceHelper<Muscle>
+    let endpointServiceHelper: MuscleServiceHelper
     
     init(apiHandler: ApiHandler, parseHandler: ParseHandler<Muscle>) {
         self.apiHandler = apiHandler
         self.parseHandler = parseHandler
-        self.endpointServiceHelper = EndpointServiceHelper<Muscle>(apiHandler: apiHandler, parseHandler: ParseHandler<MusclePage>())
+        self.endpointServiceHelper = MuscleServiceHelper(apiHandler: apiHandler, parseHandler: ParseHandler<MusclePage>())
     }
     
     func getAll(completionHandler: @escaping ((Result<[Muscle], NetworkError>) -> Void)) {

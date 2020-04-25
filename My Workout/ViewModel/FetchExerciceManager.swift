@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 class FetchExerciseManager {
     private var muscles = [Int: String]()
     private var equipment = [Int: String]()
     private var categories = [Int: String]()
+    private var exerciseImage = [Int: [URL]]()
     private var exercises = Set<Exercise>()
     private var exercisesViewModel = Set<ExerciseViewModel>()
     private var error: NetworkError?
@@ -24,6 +26,7 @@ class FetchExerciseManager {
         fetchMuscles(dispatchGroup: fetchGroup)
         fetchExercises(dispatchGroup: fetchGroup)
         fetchEquipment(dispatchGroup: fetchGroup)
+//        fetchImagesLink(dispatchGroup: fetchGroup)
         
         fetchGroup.wait()
         
@@ -39,11 +42,38 @@ class FetchExerciseManager {
         }
         exercisesViewModel = Set<ExerciseViewModel>(exercisesViewModelArray)
         
+        let downloadGroup = DispatchGroup()
+        
+        downloadImages(dispatchGroup: downloadGroup)
+        
+        downloadGroup.wait()
+        
         completionHandler(exercisesViewModel)
     }
     
-    func downloadImages() {
-        
+    func downloadImages(dispatchGroup: DispatchGroup) {
+        let imageService = ExerciseImageService(apiHandler: apiHandler, parseHandler: ParseHandler<ExerciseImage>())
+        for exercise in exercises {
+            dispatchGroup.enter()
+            imageService.getRandomImage(for: exercise) { [weak self] (uiImageResult) in
+                guard let self = self else {
+                    return
+                }
+                switch uiImageResult {
+                case .success(let uiImage):
+                    if var exerciseViewModel = self.exercisesViewModel.first(where: { $0.id == exercise.id } ) {
+                        exerciseViewModel.image = uiImage
+                        self.exercisesViewModel.update(with: exerciseViewModel)
+                        dispatchGroup.leave()
+                    } else {
+                        dispatchGroup.leave()
+                    }
+                case .failure(let error):
+                    self.error = error
+                    dispatchGroup.leave()
+                }
+            }
+        }
     }
 
     func fetchCategories(dispatchGroup: DispatchGroup) {
@@ -134,6 +164,37 @@ class FetchExerciseManager {
             dispatchGroup.leave()
         }
     }
+
+//    func fetchImagesLink(dispatchGroup: DispatchGroup) {
+//        dispatchGroup.enter()
+//
+//        let exerciseImageService = ExerciseImageService(
+//            apiHandler: apiHandler,
+//            parseHandler: ParseHandler<ExerciseImage>()
+//        )
+//
+//        exerciseImageService.getImages(for bien: Set<Exercise>)
+//            { [weak self] (exerciseImageResult) in
+//            guard let self = self else {
+//                return
+//            }
+//            switch exerciseImageResult {
+//            case .success(let fetchedExerciseImage):
+//                for exerciseImage in fetchedExerciseImage {
+//                    self.exerciseImage[exerciseImage.id] = exerciseImage.name
+//                }
+//            case .failure(let error):
+//                self.error = error
+//            }
+//            dispatchGroup.leave()
+//        }
+//    }
+    
+    //TODO if there is some time left: generalize the fetchEndpointDictionnary
+//    func fetchEndpointDictionnary<Endpoint: WgerAPIEndpoint>(dispatchGroup: DispatchGroup) {
+//        dispatchGroup.enter()
+//
+//    }
     
     private func addExercises(exercises: [Exercise]) {
         self.exercises.union(exercises)
