@@ -21,16 +21,9 @@ struct ExerciseViewModel {
     
     init(exercise: Exercise, allMuscles: [Int: String], allCategories: [Int: String], allEquipment: [Int: String]) {
         self.id = exercise.id
-        if let name = exercise.name {
-            self.name = "Name: \(name)"
-        } else {
-            self.name = nil
-        }
-        if let description = exercise.description {
-            self.description = "Description: \(description)"
-        } else {
-            self.description = nil
-        }
+        self.name = exercise.name.isEmpty ? nil : exercise.name
+        self.description = exercise.description.isEmpty ? nil : "Description: \(exercise.description)"
+        
         if let categoryId = exercise.category, let category = allCategories[categoryId] {
             self.category = "Category: \(category)"
         } else {

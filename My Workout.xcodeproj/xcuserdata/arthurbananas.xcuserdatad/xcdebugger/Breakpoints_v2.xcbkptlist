@@ -680,7 +680,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8BDB8201-489A-4BB8-A3CD-C71649290E88"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "My Workout/Controller/ExercicesViewController.swift"
@@ -692,11 +692,11 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8BDB8201-489A-4BB8-A3CD-C71649290E88 - 26c779a3bd323463"
+                  uuid = "8BDB8201-489A-4BB8-A3CD-C71649290E88 - 8c4948a29c0a1596"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseViewModel&gt;, My_Workout.NetworkError&gt;) -&gt; () in closure #1 () -&gt; () in My_Workout.ExercicesViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Set&lt;My_Workout.ExerciseViewModel&gt;) -&gt; () in closure #1 () -&gt; () in My_Workout.ExercisesViewController.viewDidLoad() -&gt; ()"
                   moduleName = "My Workout"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Controller/ExercicesViewController.swift"
@@ -704,14 +704,14 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "209">
+                  offsetFromSymbolStart = "158">
                </Location>
                <Location
-                  uuid = "8BDB8201-489A-4BB8-A3CD-C71649290E88 - 120cdb31f11dba6f"
+                  uuid = "8BDB8201-489A-4BB8-A3CD-C71649290E88 - ab5f6304666e0603"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;My_Workout.ExerciseViewModel&gt;, My_Workout.NetworkError&gt;) -&gt; () in closure #1 () -&gt; () in My_Workout.ExercicesViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Set&lt;My_Workout.ExerciseViewModel&gt;) -&gt; () in closure #1 () -&gt; () in My_Workout.ExercisesViewController.viewDidLoad() -&gt; ()"
                   moduleName = "My Workout"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arthurbananas/work/git/My%20Workout/My%20Workout/Controller/ExercicesViewController.swift"
@@ -719,9 +719,25 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "126">
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF349BEB-11D7-4700-B441-5BAE686EB537"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Workout/Networking/ApiHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "createRequest(host:path:queries:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

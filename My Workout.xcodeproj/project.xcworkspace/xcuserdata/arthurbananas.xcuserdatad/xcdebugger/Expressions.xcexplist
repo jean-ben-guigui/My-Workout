@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ExerciseViewModel.init(exercise:allMuscles:allCategories:allEquipment:):ExerciceViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "exercise.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in CategoryService.getAll(completionHandler:):CategoryService.swift">
          <PersistentStrings>
             <PersistentString

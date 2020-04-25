@@ -25,21 +25,27 @@ struct ApiHandler {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
-        components.queryItems?.append(
-            URLQueryItem(
-                name: Constants.Query.ApprovedExercisesQuery.name,
-                value: Constants.Query.ApprovedExercisesQuery.value
-            )
+        let ApprovedExercisesQuery = URLQueryItem(
+            name: Constants.Query.ApprovedExercisesQuery.name,
+            value: Constants.Query.ApprovedExercisesQuery.value
         )
-        components.queryItems?.append(
-            URLQueryItem(
-                name: Constants.Query.LanguageEnglishQuery.name,
-                value: Constants.Query.LanguageEnglishQuery.value
-            )
+        let englishQueryItem = URLQueryItem(
+            name: Constants.Query.LanguageEnglishQuery.name,
+            value: Constants.Query.LanguageEnglishQuery.value
         )
+        components.queryItems = [ApprovedExercisesQuery, englishQueryItem]
         if let queries = queries {
-            for query in queries {
-                components.queryItems?.append(URLQueryItem(name: query.key, value: query.value))
+            if var queryItems = components.queryItems {
+                for query in queries {
+                    queryItems.append(URLQueryItem(name: query.key, value: query.value))
+                }
+                components.queryItems = queryItems
+            } else {
+                var queryItems = [URLQueryItem]()
+                for query in queries {
+                    queryItems.append(URLQueryItem(name: query.key, value: query.value))
+                }
+                components.queryItems = queryItems
             }
         }
         components.path = path
