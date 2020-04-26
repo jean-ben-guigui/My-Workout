@@ -19,29 +19,21 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
         self.parseHandler = parseHandler
     }
     
-    // TODO implement it using getNextPage
     ///get the data of a page then parse it. If there is more than one page, does it recursively for each next pages.
     func getPages(
         from url: URL,
         andAddItTo initialCategories: [Endpoint] = [],
         completionHandler: @escaping ((Result<[Endpoint], NetworkError>) -> Void)
     ) {
-        var categories = initialCategories
-        apiHandler.getData(url) { (dataResult) in
-            switch dataResult {
-            case .success(let data):
-                self.parseHandler.parseData(data) { (endpointPageResult) in
-                    switch endpointPageResult {
-                    case .success(let endpointPage):
-                        categories.append(contentsOf: endpointPage.elements)
-                        if let nextPageUrl = endpointPage.nextPageUrl {
-                            self.getPages(from: nextPageUrl, andAddItTo: categories, completionHandler: completionHandler)
-                        } else {
-                            completionHandler(.success(categories))
-                        }
-                    case .failure(let error):
-                        completionHandler(.failure(error))
-                    }
+        var elements = initialCategories
+        getNextPage(from: url) { (endpointPageResult) in
+            switch endpointPageResult {
+            case .success(let endpointPage):
+                elements.append(contentsOf: endpointPage.elements)
+                if let nextPageUrl = endpointPage.nextPageUrl {
+                    self.getPages(from: nextPageUrl, andAddItTo: elements, completionHandler: completionHandler)
+                } else {
+                    completionHandler(.success(elements))
                 }
             case .failure(let error):
                 completionHandler(.failure(error))

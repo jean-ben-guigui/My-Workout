@@ -8,6 +8,7 @@
 
 import Foundation
 
+///Fetches data for the ExerciseViewController
 class FetchExerciseManager {
     private var initialized = false
     private var muscles = [Int: String]()
@@ -41,7 +42,7 @@ class FetchExerciseManager {
         completionHandler(exercisesViewModel)
     }
     
-    func getViewModelFrom(_ exercises: Set<Exercise>) -> Set<ExerciseViewModel> {
+    private func getViewModelFrom(_ exercises: Set<Exercise>) -> Set<ExerciseViewModel> {
         var exercisesViewModelArray = [ExerciseViewModel]()
         for exercise in exercises {
             let exerciseViewModel = ExerciseViewModel(
@@ -55,7 +56,7 @@ class FetchExerciseManager {
         return Set(exercisesViewModelArray)
     }
     
-    func downloadImages(
+    private func downloadImages(
         dispatchGroup: DispatchGroup
     ) {
         let imageService = ExerciseImageService(apiHandler: apiHandler, parseHandler: ParseHandler<ExerciseImage>())
@@ -85,10 +86,8 @@ class FetchExerciseManager {
     private func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
-        let categoryService = CategoryService(
-            apiHandler: apiHandler,
-            parseHandler: ParseHandler<EndpointPage<Category>>()
-        )
+        let categoryService = CategoryService(apiHandler: apiHandler,
+                                              parseHandler: ParseHandler<EndpointPage<Category>>())
         
         categoryService.getAll() { [weak self] (categoriesResult) in
             guard let self = self else {
@@ -124,10 +123,8 @@ class FetchExerciseManager {
     
     private func fetchMuscles(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
-        let muscleService = MuscleService(
-            apiHandler: apiHandler,
-            parseHandler: ParseHandler<Muscle>()
-        )
+        let muscleService = MuscleService(apiHandler: apiHandler,
+                                          parseHandler: ParseHandler<Muscle>())
         muscleService.getAll() { [weak self] (musclesResult) in
             guard let self = self else {
                 return
@@ -147,10 +144,8 @@ class FetchExerciseManager {
     private func fetchEquipment(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
-        let equipmentService = EquipmentService(
-            apiHandler: apiHandler,
-            parseHandler: ParseHandler<Equipment>()
-        )
+        let equipmentService = EquipmentService(apiHandler: apiHandler,
+                                                parseHandler: ParseHandler<Equipment>())
         
         equipmentService.getAll() { [weak self] (equipmentResult) in
             guard let self = self else {
@@ -167,35 +162,4 @@ class FetchExerciseManager {
             dispatchGroup.leave()
         }
     }
-
-//    func fetchImagesLink(dispatchGroup: DispatchGroup) {
-//        dispatchGroup.enter()
-//
-//        let exerciseImageService = ExerciseImageService(
-//            apiHandler: apiHandler,
-//            parseHandler: ParseHandler<ExerciseImage>()
-//        )
-//
-//        exerciseImageService.getImages(for bien: Set<Exercise>)
-//            { [weak self] (exerciseImageResult) in
-//            guard let self = self else {
-//                return
-//            }
-//            switch exerciseImageResult {
-//            case .success(let fetchedExerciseImage):
-//                for exerciseImage in fetchedExerciseImage {
-//                    self.exerciseImage[exerciseImage.id] = exerciseImage.name
-//                }
-//            case .failure(let error):
-//                self.error = error
-//            }
-//            dispatchGroup.leave()
-//        }
-//    }
-    
-    //TODO if there is some time left: generalize the fetchEndpointDictionnary
-//    func fetchEndpointDictionnary<Endpoint: WgerAPIEndpoint>(dispatchGroup: DispatchGroup) {
-//        dispatchGroup.enter()
-//
-//    }
 }
