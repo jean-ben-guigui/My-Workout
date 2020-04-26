@@ -17,7 +17,6 @@ struct ParseHandler<DataType: Decodable> {
         let decodedData = try JSONDecoder().decode(DataType.self, from: data)
            completionHandler(.success(decodedData))
        } catch {
-        print(error)
         completionHandler(.failure(.JSONDecoding(error)))
        }
     }

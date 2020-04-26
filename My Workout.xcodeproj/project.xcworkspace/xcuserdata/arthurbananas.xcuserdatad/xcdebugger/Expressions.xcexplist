@@ -18,5 +18,21 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "ExercisesViewController.tableView(_:willDisplay:forRowAt:):ExercicesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loading">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExerciseService.getNextExercises(completionHandler:):ExerciseService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nextExercisesUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

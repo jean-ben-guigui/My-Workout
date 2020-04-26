@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 struct Exercise: WgerAPIEndpoint {
     let id: Int

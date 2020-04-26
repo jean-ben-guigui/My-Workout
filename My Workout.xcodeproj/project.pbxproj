@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62C88DC24557F52000464C0 /* UIImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C88DB24557F52000464C0 /* UIImage+Constants.swift */; };
+		D62C88E024559735000464C0 /* DetailExerciceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C88DF24559735000464C0 /* DetailExerciceViewController.swift */; };
 		D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20D24506E0400381CC4 /* AppDelegate.swift */; };
 		D669D21024506E0400381CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20F24506E0400381CC4 /* SceneDelegate.swift */; };
 		D669D21524506E0400381CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669D21324506E0400381CC4 /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D62C88DB24557F52000464C0 /* UIImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Constants.swift"; sourceTree = "<group>"; };
+		D62C88DF24559735000464C0 /* DetailExerciceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciceViewController.swift; sourceTree = "<group>"; };
 		D669D20A24506E0400381CC4 /* My Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D669D20D24506E0400381CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D669D20F24506E0400381CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				D6CFE33A2451FC55001939F9 /* Category.swift */,
 				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
 				D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */,
+				D62C88DB24557F52000464C0 /* UIImage+Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D669D24E24518DF200381CC4 /* ExercicesViewController.swift */,
+				D62C88DF24559735000464C0 /* DetailExerciceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +403,8 @@
 				D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */,
 				D6CFE3422452CD21001939F9 /* FetchExerciceManager.swift in Sources */,
 				D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */,
+				D62C88E024559735000464C0 /* DetailExerciceViewController.swift in Sources */,
+				D62C88DC24557F52000464C0 /* UIImage+Constants.swift in Sources */,
 				D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */,
 				D67C287524543A230079EC84 /* MapExerciseModelToViewModelHelper.swift in Sources */,
 				D669D21024506E0400381CC4 /* SceneDelegate.swift in Sources */,

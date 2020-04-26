@@ -10,18 +10,18 @@ import Foundation
 
 struct Constants {
     static let wgerHost = "wger.de"
-    struct Query {
-        struct ApprovedExercisesQuery {
+    enum Query {
+        enum ApprovedExercisesQuery {
             static let name = "status"
             static let value = "2"
         }
-        struct LanguageEnglishQuery {
+        enum LanguageEnglishQuery {
             static let name = "language"
-            static let value = "1"
+            static let value = "2"
         }
     }
     
-    struct Path {
+    enum Path {
         static let exercise = "/api/v2/exercise/"
         static let category = "/api/v2/exercisecategory/"
         static let muscle = "/api/v2/muscle/"

@@ -25,40 +25,12 @@ struct CategoryService {
     func getAll(completionHandler: @escaping ((Result<[Category], NetworkError>) -> Void)) {
         let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.Path.category)
         if let url = url {
-            getPages(from: url) {
+            endpointServiceHelper.getPages(from: url) {
                 completionHandler($0)
             }
         } else {
             completionHandler(.failure(.urlInit))
         }
     }
-    
-    ///get the data of a page then parse it. If there is more than one page, does it recursively for each next pages.
-    private func getPages(
-        from url: URL,
-        andAddItTo initialCategories: [Category] = [],
-        completionHandler: @escaping ((Result<[Category], NetworkError>) -> Void)
-    ) {
-        var categories = initialCategories
-        apiHandler.getData(url) { (dataResult) in
-            switch dataResult {
-            case .success(let data):
-                self.parseHandler.parseData(data) { (categoryPageResult) in
-                    switch categoryPageResult {
-                    case .success(let categoryPage):
-                        categories.append(contentsOf: categoryPage.elements)
-                        if let nextPageUrl = categoryPage.nextPageUrl {
-                            self.getPages(from: nextPageUrl, andAddItTo: categories, completionHandler: completionHandler)
-                        } else {
-                            completionHandler(.success(categories))
-                        }
-                    case .failure(let error):
-                        completionHandler(.failure(error))
-                    }
-                }
-            case .failure(let error):
-                completionHandler(.failure(error))
-            }
-        }
-    }
+
 }

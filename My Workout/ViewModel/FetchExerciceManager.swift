@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import UIKit
 
 class FetchExerciseManager {
+    private var initialized = false
     private var muscles = [Int: String]()
     private var equipment = [Int: String]()
     private var categories = [Int: String]()
@@ -18,18 +18,30 @@ class FetchExerciseManager {
     private var exercisesViewModel = Set<ExerciseViewModel>()
     private var error: NetworkError?
     private let apiHandler = ApiHandler()
+    private let exerciseService = ExerciseService(apiHandler: ApiHandler())
     
-    func loadData(completionHandler: @escaping (Set<ExerciseViewModel>) -> Void ) {
+    func loadData(completionHandler: @escaping (Set<ExerciseViewModel>) -> Void) {
         let fetchGroup = DispatchGroup()
         
-        fetchCategories(dispatchGroup: fetchGroup)
-        fetchMuscles(dispatchGroup: fetchGroup)
+        if !initialized {
+            initialized = true
+            fetchCategories(dispatchGroup: fetchGroup)
+            fetchMuscles(dispatchGroup: fetchGroup)
+            fetchEquipment(dispatchGroup: fetchGroup)
+        }
         fetchExercises(dispatchGroup: fetchGroup)
-        fetchEquipment(dispatchGroup: fetchGroup)
-//        fetchImagesLink(dispatchGroup: fetchGroup)
-        
         fetchGroup.wait()
         
+        exercisesViewModel = self.getViewModelFrom(exercises)
+        
+        let downloadGroup = DispatchGroup()
+        downloadImages(dispatchGroup: downloadGroup)
+        downloadGroup.wait()
+        
+        completionHandler(exercisesViewModel)
+    }
+    
+    func getViewModelFrom(_ exercises: Set<Exercise>) -> Set<ExerciseViewModel> {
         var exercisesViewModelArray = [ExerciseViewModel]()
         for exercise in exercises {
             let exerciseViewModel = ExerciseViewModel(
@@ -40,18 +52,12 @@ class FetchExerciseManager {
             )
             exercisesViewModelArray.append(exerciseViewModel)
         }
-        exercisesViewModel = Set<ExerciseViewModel>(exercisesViewModelArray)
-        
-        let downloadGroup = DispatchGroup()
-        
-        downloadImages(dispatchGroup: downloadGroup)
-        
-        downloadGroup.wait()
-        
-        completionHandler(exercisesViewModel)
+        return Set(exercisesViewModelArray)
     }
     
-    func downloadImages(dispatchGroup: DispatchGroup) {
+    func downloadImages(
+        dispatchGroup: DispatchGroup
+    ) {
         let imageService = ExerciseImageService(apiHandler: apiHandler, parseHandler: ParseHandler<ExerciseImage>())
         for exercise in exercises {
             dispatchGroup.enter()
@@ -76,7 +82,7 @@ class FetchExerciseManager {
         }
     }
 
-    func fetchCategories(dispatchGroup: DispatchGroup) {
+    private func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
         let categoryService = CategoryService(
@@ -100,11 +106,8 @@ class FetchExerciseManager {
         }
     }
     
-    func fetchExercises(dispatchGroup: DispatchGroup) {
+    private func fetchExercises(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
-        let exerciseService = ExerciseService(
-            apiHandler: apiHandler
-        )
         exerciseService.getNextExercises() { [weak self] (exercisesResult) in
             guard let self = self else {
                 return
@@ -119,7 +122,7 @@ class FetchExerciseManager {
         }
     }
     
-    func fetchMuscles(dispatchGroup: DispatchGroup) {
+    private func fetchMuscles(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         let muscleService = MuscleService(
             apiHandler: apiHandler,
@@ -141,7 +144,7 @@ class FetchExerciseManager {
         }
     }
     
-    func fetchEquipment(dispatchGroup: DispatchGroup) {
+    private func fetchEquipment(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
         let equipmentService = EquipmentService(
@@ -195,8 +198,4 @@ class FetchExerciseManager {
 //        dispatchGroup.enter()
 //
 //    }
-    
-    private func addExercises(exercises: [Exercise]) {
-        self.exercises.union(exercises)
-    }
 }

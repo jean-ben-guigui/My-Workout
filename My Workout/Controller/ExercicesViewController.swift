@@ -16,15 +16,18 @@ class ExercisesViewController: UIViewController {
     
     @IBOutlet private weak var exerciseTableView: UITableView!
     private var dataSource: UITableViewDiffableDataSource<Section, ExerciseViewModel>?
+    private let fetchExerciseManager = FetchExerciseManager()
+    private var loading = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        DispatchQueue.global(qos: .userInitiated).async {
-            let fetchExerciseManager = FetchExerciseManager()
-            fetchExerciseManager.loadData() { (exercisesViewModel) in
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.fetchExerciseManager.loadData() { (exercisesViewModel) in
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else {
                         return
@@ -90,10 +93,39 @@ class ExercisesViewController: UIViewController {
         cell.primaryMusclesLabel.text = exercise.primaryMuscles
         cell.secondaryMusclesLabel.text = exercise.secondaryMuscles
         if let image = exercise.image {
+            cell.exerciseImage.backgroundColor = .white //Fix the translucent images in dark mode
             cell.exerciseImage.image = image
+        } else {
+            cell.exerciseImage.backgroundColor = .systemBackground
+            cell.exerciseImage.image = UIImage.Exercise.placeholder
         }
     }
-    
-    //MARK: -  Delegate
-    
+
+}
+
+//MARK: -  Delegate
+
+extension ExercisesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == dataSource?.snapshot().numberOfItems(inSection: .main), !loading {
+            loading = true
+            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.fetchExerciseManager.loadData() { [weak self] (exercisesViewModel) in
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self = self else {
+                            return
+                        }
+                        if var currentSnapshot = self.dataSource?.snapshot() {
+                            currentSnapshot.appendItems(Array(exercisesViewModel))
+                            self.dataSource?.apply(currentSnapshot)
+                            self.loading = false
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

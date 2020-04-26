@@ -28,6 +28,7 @@ struct ExerciseImageService {
             switch $0 {
             case .success(let exerciseImage):
                 if let randomImageLink = exerciseImage.first {
+//                    print("randomImageLink, \(randomImageLink)")
                     self.downloadImage(url: randomImageLink.url) {
                         completionHandler($0)
                     }
