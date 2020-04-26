@@ -25,9 +25,7 @@ struct CategoryService {
     func getAll(completionHandler: @escaping ((Result<[Category], NetworkError>) -> Void)) {
         let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.Path.category)
         if let url = url {
-            endpointServiceHelper.getPages(from: url) {
-                completionHandler($0)
-            }
+            endpointServiceHelper.getPages(from: url, completionHandler: completionHandler)
         } else {
             completionHandler(.failure(.urlInit))
         }

@@ -10,7 +10,6 @@ import Foundation
 
 struct ApiHandler {    
     func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
-        
             let request = URLRequest(url: url)
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
@@ -21,21 +20,28 @@ struct ApiHandler {
             }.resume()
         }
     
-    func createRequest(host: String, path: String, queries: [String: String]? = nil ) -> URL? {
+    func createRequest(
+        host: String,
+        path: String,
+        defaultQueries: Bool = true,
+        queries: [String: String]? = nil
+    ) -> URL? {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
         components.path = path
         
-        let ApprovedExercisesQuery = URLQueryItem(
-            name: Constants.Query.ApprovedExercisesQuery.name,
-            value: Constants.Query.ApprovedExercisesQuery.value
-        )
-        let englishQueryItem = URLQueryItem(
-            name: Constants.Query.LanguageEnglishQuery.name,
-            value: Constants.Query.LanguageEnglishQuery.value
-        )
-        components.queryItems = [ApprovedExercisesQuery, englishQueryItem]
+        if defaultQueries {
+            let ApprovedExercisesQuery = URLQueryItem(
+                name: Constants.Query.ApprovedExercisesQuery.name,
+                value: Constants.Query.ApprovedExercisesQuery.value
+            )
+            let englishQueryItem = URLQueryItem(
+                name: Constants.Query.LanguageEnglishQuery.name,
+                value: Constants.Query.LanguageEnglishQuery.value
+            )
+            components.queryItems = [ApprovedExercisesQuery, englishQueryItem]
+        }
         
         if let queries = queries {
             if var queryItems = components.queryItems {

@@ -36,50 +36,63 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="separatorColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" hidden="YES" contentMode="scaleAspectFit" id="Psu-es-rym">
-                                    <rect key="frame" x="0.0" y="92.5" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="259.5" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" id="6Gn-Dk-Ae1" customClass="ExerciseCell" customModule="My_Workout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="203.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Gn-Dk-Ae1" id="fXx-4Q-Ydm">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="36.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="203.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="s17-Vc-0zD">
-                                                    <rect key="frame" x="5" y="0.0" width="52" height="36.5"/>
+                                                    <rect key="frame" x="5" y="5" width="83" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="uid-20-RTm"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="h51-7g-17h" userLabel="ExerciseLabelStackview">
-                                                    <rect key="frame" x="62" y="5" width="347" height="26.5"/>
+                                                    <rect key="frame" x="93" y="5" width="316" height="193.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5T-Jv-v0n" userLabel="nameLabel">
-                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="2"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5T-Jv-v0n" userLabel="nameLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="43"/>
+                                                            <string key="text">j'en veux joe
+j'en veut</string>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                             <color key="textColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khe-WI-MP0" userLabel="categoryLabel">
-                                                            <rect key="frame" x="0.0" y="6" width="0.0" height="2"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khe-WI-MP0" userLabel="categoryLabel">
+                                                            <rect key="frame" x="0.0" y="47" width="79.5" height="33.5"/>
+                                                            <string key="text">j'en veux joe
+j'en veut</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPL-kS-T9I" userLabel="equipmentLabel">
-                                                            <rect key="frame" x="0.0" y="12" width="0.0" height="2.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPL-kS-T9I" userLabel="equipmentLabel">
+                                                            <rect key="frame" x="0.0" y="84.5" width="79.5" height="34"/>
+                                                            <string key="text">j'en veux joe
+j'en veut</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-8g-kNd" userLabel="primaryMusclesLabel">
-                                                            <rect key="frame" x="0.0" y="18.5" width="0.0" height="2"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-8g-kNd" userLabel="primaryMusclesLabel">
+                                                            <rect key="frame" x="0.0" y="122.5" width="79.5" height="33.5"/>
+                                                            <string key="text">j'en veux joe
+j'en veut</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyR-KJ-M1Z" userLabel="secondaryMusclesLabel">
-                                                            <rect key="frame" x="0.0" y="24.5" width="0.0" height="2"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyR-KJ-M1Z" userLabel="secondaryMusclesLabel">
+                                                            <rect key="frame" x="0.0" y="160" width="79.5" height="33.5"/>
+                                                            <string key="text">j'en veux joe
+j'en veut</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -88,9 +101,9 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="s17-Vc-0zD" firstAttribute="top" secondItem="fXx-4Q-Ydm" secondAttribute="top" id="1z1-wa-Ozu"/>
-                                                <constraint firstItem="s17-Vc-0zD" firstAttribute="width" secondItem="fXx-4Q-Ydm" secondAttribute="width" multiplier="0.125" id="Amt-eL-37E"/>
-                                                <constraint firstAttribute="bottom" secondItem="s17-Vc-0zD" secondAttribute="bottom" id="a9d-Dd-XrN"/>
+                                                <constraint firstItem="s17-Vc-0zD" firstAttribute="top" secondItem="fXx-4Q-Ydm" secondAttribute="top" constant="5" id="1z1-wa-Ozu"/>
+                                                <constraint firstItem="s17-Vc-0zD" firstAttribute="width" secondItem="fXx-4Q-Ydm" secondAttribute="width" multiplier="0.2" id="CEP-Ye-O96"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s17-Vc-0zD" secondAttribute="bottom" constant="5" id="a9d-Dd-XrN"/>
                                                 <constraint firstItem="h51-7g-17h" firstAttribute="top" secondItem="fXx-4Q-Ydm" secondAttribute="top" constant="5" id="bSC-ns-Ufa"/>
                                                 <constraint firstItem="s17-Vc-0zD" firstAttribute="leading" secondItem="fXx-4Q-Ydm" secondAttribute="leading" constant="5" id="gp3-wp-v1F"/>
                                                 <constraint firstAttribute="trailing" secondItem="h51-7g-17h" secondAttribute="trailing" constant="5" id="mVQ-aV-kxY"/>
@@ -144,43 +157,42 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zij-ht-tIJ" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="487.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="geh-rg-hKM" userLabel="ExerciseLabelStackview">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="487.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-u9-rHi" userLabel="nameLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="412.5" height="107.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-u9-rHi" userLabel="nameLabel">
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-2U-4uY" userLabel="categoryLabel">
-                                                        <rect key="frame" x="0.0" y="111.5" width="408.5" height="72"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-2U-4uY" userLabel="categoryLabel">
+                                                        <rect key="frame" x="0.0" y="4" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-tp-z9z" userLabel="equipmentLabel">
-                                                        <rect key="frame" x="0.0" y="187.5" width="408.5" height="72"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-tp-z9z" userLabel="equipmentLabel">
+                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-fO-noR" userLabel="descriptionLabel">
-                                                        <rect key="frame" x="0.0" y="263.5" width="408.5" height="72"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-fO-noR" userLabel="descriptionLabel">
+                                                        <rect key="frame" x="0.0" y="12" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVY-ee-4BC" userLabel="primaryMusclesLabel">
-                                                        <rect key="frame" x="0.0" y="339.5" width="408.5" height="72"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVY-ee-4BC" userLabel="primaryMusclesLabel">
+                                                        <rect key="frame" x="0.0" y="16" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-n5-Hfw" userLabel="secondaryMusclesLabel">
-                                                        <rect key="frame" x="0.0" y="415.5" width="408.5" height="72"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-n5-Hfw" userLabel="secondaryMusclesLabel">
+                                                        <rect key="frame" x="0.0" y="20" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>

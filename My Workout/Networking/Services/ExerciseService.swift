@@ -26,7 +26,10 @@ class ExerciseService {
                 path: Constants.Path.exercise
         )
         if let url = url {
-            endpointServiceHelper.getNextPage(from: url) {
+            endpointServiceHelper.getNextPage(from: url) { [weak self] in
+                guard let self = self else {
+                    return
+                }
                 switch $0 {
                 case .success(let page):
                     self.nextExercisesUrl = page.nextPageUrl

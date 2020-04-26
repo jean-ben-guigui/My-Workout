@@ -26,6 +26,8 @@ struct MuscleService {
         let url = apiHandler.createRequest(host: Constants.wgerHost, path: Constants.Path.muscle)
         if let url = url {
             endpointServiceHelper.getPages(from: url, completionHandler: completionHandler)
+        } else {
+            completionHandler(.failure(.urlInit))
         }
     }
 }
