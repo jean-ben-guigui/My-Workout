@@ -19,7 +19,6 @@ class DetailExerciseViewController: UIViewController {
     @IBOutlet weak var primaryMusclesLabel: UILabel!
     @IBOutlet weak var secondaryMusclesLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var descriptionWebView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

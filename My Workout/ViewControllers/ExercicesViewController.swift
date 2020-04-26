@@ -33,13 +33,6 @@ class ExercisesViewController: UIViewController {
                         return
                     }
                     self.configureDataSource(display: exercisesViewModel)
-//                    DispatchQueue.global(qos: .userInitiated).async {
-//                        fetchExerciseManager.downloadImages() { (exerciseViewModel) in
-//                            DispatchQueue.main.async { [weak self] in
-//                                self?.updateDataSource()
-//                            }
-//                        }
-//                    }
                 }
             }
         }
@@ -79,17 +72,16 @@ class ExercisesViewController: UIViewController {
     func configureExerciseCell(cell: ExerciseCell, exercise: ExerciseViewModel) {
         cell.categoryLabel.text = exercise.category
         cell.nameLabel.text = exercise.name
-        cell.nameLabel.numberOfLines = 0
-        cell.equiplentLabel.text = exercise.equipment
-        cell.equiplentLabel.numberOfLines = 0
+//        cell.nameLabel.numberOfLines = 0
+        cell.equipmentLabel.text = exercise.equipment
+//        cell.equiplentLabel.numberOfLines = 0
         cell.primaryMusclesLabel.text = exercise.primaryMuscles
-        cell.primaryMusclesLabel.numberOfLines = 0
+//        cell.primaryMusclesLabel.numberOfLines = 0
         cell.secondaryMusclesLabel.text = exercise.secondaryMuscles
-        cell.secondaryMusclesLabel.numberOfLines = 0
+//        cell.secondaryMusclesLabel.numberOfLines = 0
         if let image = exercise.image {
             cell.exerciseImage.backgroundColor = .white //Fix the translucent images in dark mode
             cell.exerciseImage.image = image
-            
         } else {
             cell.exerciseImage.backgroundColor = .systemBackground
             cell.exerciseImage.image = UIImage.Exercise.placeholder

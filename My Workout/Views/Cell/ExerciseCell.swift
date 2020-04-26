@@ -13,7 +13,7 @@ class ExerciseCell: UITableViewCell {
     
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var equiplentLabel: UILabel!
+    @IBOutlet weak var equipmentLabel: UILabel!
     @IBOutlet weak var primaryMusclesLabel: UILabel!
     @IBOutlet weak var secondaryMusclesLabel: UILabel!
     @IBOutlet weak var exerciseImage: UIImageView!

@@ -26,6 +26,7 @@ struct Constants {
         static let category = "/api/v2/exercisecategory/"
         static let muscle = "/api/v2/muscle/"
         static let exerciseImage = "/api/v2/exerciseimage/"
+        static let equipment = "/api/v2/equipment/"
     }
     
 }
