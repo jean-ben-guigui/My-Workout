@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// An exercise to display in a view
 struct ExerciseViewModel {
     let id: Int
     let name: String?

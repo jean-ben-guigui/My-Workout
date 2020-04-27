@@ -8,8 +8,25 @@
 
 import Foundation
 
-struct ApiHandler {    
-    func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
+/// Handle network requests
+struct ApiHandler: ApiHandlerProtocol {
+    ///Get data from a url and decode it
+    func get<ToDecode: Decodable>(_ url: URL, completionHandler: @escaping(Result<ToDecode, NetworkError>) -> Void) {
+        getData(url) {
+            switch $0 {
+            case .success(let data):
+                let parseHandler = ParseHandler<ToDecode>()
+                parseHandler.parseData(data) {
+                    completionHandler($0)
+                }
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
+    
+    ///Get data from a url
+    private func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
             let request = URLRequest(url: url)
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
@@ -20,10 +37,11 @@ struct ApiHandler {
             }.resume()
         }
     
+    ///Create a URL
     func createRequest(
         host: String,
         path: String,
-        defaultQueries: Bool = true,
+        defaultQueries: Bool? = true,
         queries: [String: String]? = nil
     ) -> URL? {
         var components = URLComponents()
@@ -31,7 +49,7 @@ struct ApiHandler {
         components.host = host
         components.path = path
         
-        if defaultQueries {
+        if let defaultQueries = defaultQueries, defaultQueries {
             let ApprovedExercisesQuery = URLQueryItem(
                 name: Constants.Query.ApprovedExercisesQuery.name,
                 value: Constants.Query.ApprovedExercisesQuery.value

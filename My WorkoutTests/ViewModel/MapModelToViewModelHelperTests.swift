@@ -9,7 +9,7 @@
 import XCTest
 @testable import My_Workout
 
-class MapModelToCiewModelHelperTests: XCTestCase {
+class MapModelToViewModelHelperTests: XCTestCase {
 
     func testGetTextTodisplay() throws {
         let map = MapModelToViewModelHelper()

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An exercise as specified in the wger api model
 struct Exercise: WgerAPIEndpoint {
     let id: Int
     let name: String

@@ -8,18 +8,17 @@
 
 import Foundation
 
+/// Fetches muscles
 struct MuscleService {
     typealias MusclePage = EndpointPage<Muscle>
     typealias MuscleServiceHelper = EndpointServiceHelper<Muscle>
     
     let apiHandler: ApiHandler
-    let parseHandler: ParseHandler<Muscle>
     let endpointServiceHelper: MuscleServiceHelper
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<Muscle>) {
+    init(apiHandler: ApiHandler = ApiHandler()) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
-        self.endpointServiceHelper = MuscleServiceHelper(apiHandler: apiHandler, parseHandler: ParseHandler<MusclePage>())
+        self.endpointServiceHelper = MuscleServiceHelper(apiHandler: apiHandler)
     }
     
     func getAll(completionHandler: @escaping ((Result<[Muscle], NetworkError>) -> Void)) {

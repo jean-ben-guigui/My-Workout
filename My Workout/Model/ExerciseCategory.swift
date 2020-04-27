@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  ExerciseCategory.swift
 //  My Workout
 //
 //  Created by Arthur Duver on 23/04/2020.
@@ -8,17 +8,18 @@
 
 import Foundation
 
-struct Category: WgerAPIEndpoint {
+/// An category as specified in the wger api model
+struct ExerciseCategory: WgerAPIEndpoint {
     let id: Int
     let name: String
 }
 
-extension Category: Hashable {
+extension ExerciseCategory: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
     
-    static func ==(lhs: Category, rhs: Category) -> Bool {
+    static func ==(lhs: ExerciseCategory, rhs: ExerciseCategory) -> Bool {
         return lhs.id == rhs.id
     }
 }

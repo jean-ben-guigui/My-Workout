@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Handle the parsing of data
 struct ParseHandler<DataType: Decodable> {
     func parseData(
         _ data: Data,

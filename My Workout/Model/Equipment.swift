@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An equipment as specified in the wger api model
 struct Equipment: WgerAPIEndpoint {
     let id: Int
     let name: String

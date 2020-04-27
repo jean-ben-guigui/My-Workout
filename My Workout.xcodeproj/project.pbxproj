@@ -9,16 +9,19 @@
 /* Begin PBXBuildFile section */
 		D62C88DC24557F52000464C0 /* UIImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C88DB24557F52000464C0 /* UIImage+Constants.swift */; };
 		D62C88E024559735000464C0 /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C88DF24559735000464C0 /* DetailExerciseViewController.swift */; };
+		D661ED1B24564CD2004BC15A /* NetworkMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED1A24564CD2004BC15A /* NetworkMapService.swift */; };
+		D661ED1F2456C179004BC15A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D661ED1E2456C179004BC15A /* README.md */; };
+		D661ED2A2456F62E004BC15A /* ApiHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED292456F62E004BC15A /* ApiHandlerProtocol.swift */; };
+		D661ED2C2456F696004BC15A /* CategoryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */; };
 		D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20D24506E0400381CC4 /* AppDelegate.swift */; };
 		D669D21024506E0400381CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20F24506E0400381CC4 /* SceneDelegate.swift */; };
 		D669D21524506E0400381CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669D21324506E0400381CC4 /* Main.storyboard */; };
 		D669D21724506E0C00381CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D669D21624506E0C00381CC4 /* Assets.xcassets */; };
 		D669D21A24506E0C00381CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669D21824506E0C00381CC4 /* LaunchScreen.storyboard */; };
-		D669D23024506E0C00381CC4 /* My_WorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D22F24506E0C00381CC4 /* My_WorkoutUITests.swift */; };
 		D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24124509BBD00381CC4 /* ApiHandler.swift */; };
 		D669D24424509C3F00381CC4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24324509C3F00381CC4 /* NetworkError.swift */; };
 		D669D2462450A21100381CC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2452450A21100381CC4 /* Constants.swift */; };
-		D669D24F24518DF200381CC4 /* ExercicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24E24518DF200381CC4 /* ExercicesViewController.swift */; };
+		D669D24F24518DF200381CC4 /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D24E24518DF200381CC4 /* ExercisesViewController.swift */; };
 		D669D2512451902B00381CC4 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2502451902B00381CC4 /* Exercise.swift */; };
 		D669D2552451BA6400381CC4 /* ExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2542451BA6400381CC4 /* ExerciseService.swift */; };
 		D669D2582451D3B300381CC4 /* ParseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D2572451D3B300381CC4 /* ParseHandler.swift */; };
@@ -30,17 +33,17 @@
 		D67C2873245423600079EC84 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C2872245423600079EC84 /* ExerciseCell.swift */; };
 		D67C287524543A230079EC84 /* MapExerciseModelToViewModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C287424543A230079EC84 /* MapExerciseModelToViewModelHelper.swift */; };
 		D67C2877245479810079EC84 /* ExerciseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C2876245479810079EC84 /* ExerciseImage.swift */; };
+		D68DBF3A245701D00038E323 /* MockApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DBF39245701D00038E323 /* MockApiHandler.swift */; };
 		D6CFE3392451FAC0001939F9 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3382451FAC0001939F9 /* ExerciseViewModel.swift */; };
-		D6CFE33B2451FC55001939F9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33A2451FC55001939F9 /* Category.swift */; };
-		D6CFE33D2452035F001939F9 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33C2452035F001939F9 /* CategoryService.swift */; };
+		D6CFE33B2451FC55001939F9 /* ExerciseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33A2451FC55001939F9 /* ExerciseCategory.swift */; };
+		D6CFE33D2452035F001939F9 /* ExerciseCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33C2452035F001939F9 /* ExerciseCategoryService.swift */; };
 		D6CFE3402452C403001939F9 /* ExerciseImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE33F2452C403001939F9 /* ExerciseImageService.swift */; };
-		D6CFE3422452CD21001939F9 /* FetchExerciceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */; };
+		D6CFE3422452CD21001939F9 /* FetchExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3412452CD21001939F9 /* FetchExerciseManager.swift */; };
 		D6CFE3442452D039001939F9 /* MuscleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE3432452D039001939F9 /* MuscleService.swift */; };
 		D6CFE346245302CD001939F9 /* EndpointPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFE345245302CD001939F9 /* EndpointPage.swift */; };
 		D6DEC9212455B7370004C7E4 /* String+HtmlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9202455B7370004C7E4 /* String+HtmlHelper.swift */; };
 		D6DEC9232455D50B0004C7E4 /* ExerciseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */; };
-		D6DEC9282455EB290004C7E4 /* MapModelToCiewModelHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9272455EB290004C7E4 /* MapModelToCiewModelHelperTests.swift */; };
-		D6DEC92F2455F45D0004C7E4 /* ExerciseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */; };
+		D6DEC9282455EB290004C7E4 /* MapModelToViewModelHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */; };
 		D6DEC9312455F5790004C7E4 /* ApiHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9302455F5790004C7E4 /* ApiHandlerTests.swift */; };
 		D6DEC9342455F9D30004C7E4 /* ParseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9332455F9D30004C7E4 /* ParseHandlerTests.swift */; };
 /* End PBXBuildFile section */
@@ -53,18 +56,15 @@
 			remoteGlobalIDString = D669D20924506E0400381CC4;
 			remoteInfo = "My Workout";
 		};
-		D669D22C24506E0C00381CC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D669D20224506E0400381CC4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D669D20924506E0400381CC4;
-			remoteInfo = "My Workout";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D62C88DB24557F52000464C0 /* UIImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Constants.swift"; sourceTree = "<group>"; };
 		D62C88DF24559735000464C0 /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
+		D661ED1A24564CD2004BC15A /* NetworkMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMapService.swift; sourceTree = "<group>"; };
+		D661ED1E2456C179004BC15A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D661ED292456F62E004BC15A /* ApiHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlerProtocol.swift; sourceTree = "<group>"; };
+		D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryServiceTests.swift; sourceTree = "<group>"; };
 		D669D20A24506E0400381CC4 /* My Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D669D20D24506E0400381CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D669D20F24506E0400381CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,13 +74,10 @@
 		D669D21B24506E0C00381CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D669D22024506E0C00381CC4 /* My WorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My WorkoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D669D22624506E0C00381CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D669D22B24506E0C00381CC4 /* My WorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My WorkoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D669D22F24506E0C00381CC4 /* My_WorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_WorkoutUITests.swift; sourceTree = "<group>"; };
-		D669D23124506E0C00381CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D669D24124509BBD00381CC4 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		D669D24324509C3F00381CC4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D669D2452450A21100381CC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D669D24E24518DF200381CC4 /* ExercicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicesViewController.swift; sourceTree = "<group>"; };
+		D669D24E24518DF200381CC4 /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
 		D669D2502451902B00381CC4 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D669D2542451BA6400381CC4 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
 		D669D2572451D3B300381CC4 /* ParseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHandler.swift; sourceTree = "<group>"; };
@@ -92,17 +89,17 @@
 		D67C2872245423600079EC84 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		D67C287424543A230079EC84 /* MapExerciseModelToViewModelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExerciseModelToViewModelHelper.swift; sourceTree = "<group>"; };
 		D67C2876245479810079EC84 /* ExerciseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImage.swift; sourceTree = "<group>"; };
+		D68DBF39245701D00038E323 /* MockApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiHandler.swift; sourceTree = "<group>"; };
 		D6CFE3382451FAC0001939F9 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
-		D6CFE33A2451FC55001939F9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		D6CFE33C2452035F001939F9 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		D6CFE33A2451FC55001939F9 /* ExerciseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCategory.swift; sourceTree = "<group>"; };
+		D6CFE33C2452035F001939F9 /* ExerciseCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCategoryService.swift; sourceTree = "<group>"; };
 		D6CFE33F2452C403001939F9 /* ExerciseImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImageService.swift; sourceTree = "<group>"; };
-		D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciceManager.swift; sourceTree = "<group>"; };
+		D6CFE3412452CD21001939F9 /* FetchExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseManager.swift; sourceTree = "<group>"; };
 		D6CFE3432452D039001939F9 /* MuscleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleService.swift; sourceTree = "<group>"; };
 		D6CFE345245302CD001939F9 /* EndpointPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointPage.swift; sourceTree = "<group>"; };
 		D6DEC9202455B7370004C7E4 /* String+HtmlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HtmlHelper.swift"; sourceTree = "<group>"; };
 		D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModelTests.swift; sourceTree = "<group>"; };
-		D6DEC9272455EB290004C7E4 /* MapModelToCiewModelHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelToCiewModelHelperTests.swift; sourceTree = "<group>"; };
-		D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseServiceTests.swift; sourceTree = "<group>"; };
+		D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelToViewModelHelperTests.swift; sourceTree = "<group>"; };
 		D6DEC9302455F5790004C7E4 /* ApiHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlerTests.swift; sourceTree = "<group>"; };
 		D6DEC9332455F9D30004C7E4 /* ParseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,22 +119,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D669D22824506E0C00381CC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D661ED2F2456F7BF004BC15A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D68DBF39245701D00038E323 /* MockApiHandler.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		D669D20124506E0400381CC4 = {
 			isa = PBXGroup;
 			children = (
+				D661ED1E2456C179004BC15A /* README.md */,
 				D669D20C24506E0400381CC4 /* My Workout */,
 				D669D22324506E0C00381CC4 /* My WorkoutTests */,
-				D669D22E24506E0C00381CC4 /* My WorkoutUITests */,
 				D669D20B24506E0400381CC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,7 +145,6 @@
 			children = (
 				D669D20A24506E0400381CC4 /* My Workout.app */,
 				D669D22024506E0C00381CC4 /* My WorkoutTests.xctest */,
-				D669D22B24506E0C00381CC4 /* My WorkoutUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,15 +152,15 @@
 		D669D20C24506E0400381CC4 /* My Workout */ = {
 			isa = PBXGroup;
 			children = (
-				D6DEC92C2455F2CD0004C7E4 /* Resources */,
 				D6DEC9242455E0860004C7E4 /* Extensions */,
-				D6CFE3372451FAA7001939F9 /* ViewModel */,
 				D6DEC92B2455F24B0004C7E4 /* Managers */,
 				D669D23D24507D1F00381CC4 /* Model */,
 				D669D2562451D36A00381CC4 /* Networking */,
+				D6DEC92C2455F2CD0004C7E4 /* Resources */,
 				D669D24024508FF300381CC4 /* Supporting files */,
-				D669D23F24507D6500381CC4 /* ViewControllers */,
 				D669D23E24507D2900381CC4 /* Views */,
+				D669D23F24507D6500381CC4 /* ViewControllers */,
+				D6CFE3372451FAA7001939F9 /* ViewModel */,
 			);
 			path = "My Workout";
 			sourceTree = "<group>";
@@ -172,34 +169,25 @@
 			isa = PBXGroup;
 			children = (
 				D6DEC9322455F5860004C7E4 /* Handlers */,
+				D661ED2F2456F7BF004BC15A /* Mocks */,
 				D6DEC92D2455F43E0004C7E4 /* Services */,
-				D669D22624506E0C00381CC4 /* Info.plist */,
-				D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */,
-				D6DEC9272455EB290004C7E4 /* MapModelToCiewModelHelperTests.swift */,
+				D68DBF3C24571DFF0038E323 /* Supporting files */,
+				D68DBF412457504E0038E323 /* ViewModel */,
 			);
 			path = "My WorkoutTests";
-			sourceTree = "<group>";
-		};
-		D669D22E24506E0C00381CC4 /* My WorkoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D669D22F24506E0C00381CC4 /* My_WorkoutUITests.swift */,
-				D669D23124506E0C00381CC4 /* Info.plist */,
-			);
-			path = "My WorkoutUITests";
 			sourceTree = "<group>";
 		};
 		D669D23D24507D1F00381CC4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D68DBF3F245725850038E323 /* Protocols */,
 				D669D2452450A21100381CC4 /* Constants.swift */,
-				D669D2502451902B00381CC4 /* Exercise.swift */,
+				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
 				D6762336245397FA00843F98 /* Equipment.swift */,
+				D669D2502451902B00381CC4 /* Exercise.swift */,
+				D6CFE33A2451FC55001939F9 /* ExerciseCategory.swift */,
 				D67C2876245479810079EC84 /* ExerciseImage.swift */,
 				D669D2592451F38500381CC4 /* Muscle.swift */,
-				D6CFE33A2451FC55001939F9 /* Category.swift */,
-				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
-				D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,7 +204,7 @@
 		D669D23F24507D6500381CC4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D669D24E24518DF200381CC4 /* ExercicesViewController.swift */,
+				D669D24E24518DF200381CC4 /* ExercisesViewController.swift */,
 				D62C88DF24559735000464C0 /* DetailExerciseViewController.swift */,
 			);
 			path = ViewControllers;
@@ -250,6 +238,55 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D68DBF3C24571DFF0038E323 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D669D22624506E0C00381CC4 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D68DBF3D24571E7D0038E323 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D661ED1A24564CD2004BC15A /* NetworkMapService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D68DBF3E2457252D0038E323 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D661ED292456F62E004BC15A /* ApiHandlerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D68DBF3F245725850038E323 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D673639024534FAD00F84C8C /* WgerAPIEndpoint.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D68DBF4024572BA30038E323 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D673638C2453454A00F84C8C /* EndpointServiceHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D68DBF412457504E0038E323 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */,
+				D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D6CFE3372451FAA7001939F9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,10 +299,11 @@
 		D6CFE33E24520369001939F9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D68DBF4024572BA30038E323 /* Helper */,
+				D68DBF3D24571E7D0038E323 /* Protocols */,
 				D669D2542451BA6400381CC4 /* ExerciseService.swift */,
+				D6CFE33C2452035F001939F9 /* ExerciseCategoryService.swift */,
 				D6CFE3432452D039001939F9 /* MuscleService.swift */,
-				D6CFE33C2452035F001939F9 /* CategoryService.swift */,
-				D673638C2453454A00F84C8C /* EndpointServiceHelper.swift */,
 				D67623382453983600843F98 /* EquipmentService.swift */,
 				D6CFE33F2452C403001939F9 /* ExerciseImageService.swift */,
 			);
@@ -292,6 +330,7 @@
 		D6DEC92A2455EE190004C7E4 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				D68DBF3E2457252D0038E323 /* Protocols */,
 				D669D24124509BBD00381CC4 /* ApiHandler.swift */,
 				D669D2572451D3B300381CC4 /* ParseHandler.swift */,
 			);
@@ -301,7 +340,7 @@
 		D6DEC92B2455F24B0004C7E4 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D6CFE3412452CD21001939F9 /* FetchExerciceManager.swift */,
+				D6CFE3412452CD21001939F9 /* FetchExerciseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -318,7 +357,7 @@
 		D6DEC92D2455F43E0004C7E4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */,
+				D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -370,24 +409,6 @@
 			productReference = D669D22024506E0C00381CC4 /* My WorkoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D669D22A24506E0C00381CC4 /* My WorkoutUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D669D23A24506E0C00381CC4 /* Build configuration list for PBXNativeTarget "My WorkoutUITests" */;
-			buildPhases = (
-				D669D22724506E0C00381CC4 /* Sources */,
-				D669D22824506E0C00381CC4 /* Frameworks */,
-				D669D22924506E0C00381CC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D669D22D24506E0C00381CC4 /* PBXTargetDependency */,
-			);
-			name = "My WorkoutUITests";
-			productName = "My WorkoutUITests";
-			productReference = D669D22B24506E0C00381CC4 /* My WorkoutUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -402,10 +423,6 @@
 						CreatedOnToolsVersion = 11.4;
 					};
 					D669D21F24506E0C00381CC4 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = D669D20924506E0400381CC4;
-					};
-					D669D22A24506E0C00381CC4 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = D669D20924506E0400381CC4;
 					};
@@ -426,7 +443,6 @@
 			targets = (
 				D669D20924506E0400381CC4 /* My Workout */,
 				D669D21F24506E0C00381CC4 /* My WorkoutTests */,
-				D669D22A24506E0C00381CC4 /* My WorkoutUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,18 +454,12 @@
 			files = (
 				D669D21A24506E0C00381CC4 /* LaunchScreen.storyboard in Resources */,
 				D669D21724506E0C00381CC4 /* Assets.xcassets in Resources */,
+				D661ED1F2456C179004BC15A /* README.md in Resources */,
 				D669D21524506E0400381CC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D669D21E24506E0C00381CC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D669D22924506E0C00381CC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,15 +474,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D669D2552451BA6400381CC4 /* ExerciseService.swift in Sources */,
+				D661ED1B24564CD2004BC15A /* NetworkMapService.swift in Sources */,
 				D669D2512451902B00381CC4 /* Exercise.swift in Sources */,
 				D669D25A2451F38500381CC4 /* Muscle.swift in Sources */,
+				D68DBF3A245701D00038E323 /* MockApiHandler.swift in Sources */,
 				D67C2873245423600079EC84 /* ExerciseCell.swift in Sources */,
-				D6CFE33D2452035F001939F9 /* CategoryService.swift in Sources */,
+				D6CFE33D2452035F001939F9 /* ExerciseCategoryService.swift in Sources */,
 				D673638D2453454A00F84C8C /* EndpointServiceHelper.swift in Sources */,
 				D67623392453983600843F98 /* EquipmentService.swift in Sources */,
 				D6CFE3392451FAC0001939F9 /* ExerciseViewModel.swift in Sources */,
 				D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */,
-				D6CFE3422452CD21001939F9 /* FetchExerciceManager.swift in Sources */,
+				D6CFE3422452CD21001939F9 /* FetchExerciseManager.swift in Sources */,
 				D669D24224509BBD00381CC4 /* ApiHandler.swift in Sources */,
 				D62C88E024559735000464C0 /* DetailExerciseViewController.swift in Sources */,
 				D62C88DC24557F52000464C0 /* UIImage+Constants.swift in Sources */,
@@ -484,11 +496,12 @@
 				D673639124534FAD00F84C8C /* WgerAPIEndpoint.swift in Sources */,
 				D67C2877245479810079EC84 /* ExerciseImage.swift in Sources */,
 				D6762337245397FA00843F98 /* Equipment.swift in Sources */,
-				D669D24F24518DF200381CC4 /* ExercicesViewController.swift in Sources */,
+				D669D24F24518DF200381CC4 /* ExercisesViewController.swift in Sources */,
 				D6DEC9212455B7370004C7E4 /* String+HtmlHelper.swift in Sources */,
 				D669D2462450A21100381CC4 /* Constants.swift in Sources */,
 				D669D2582451D3B300381CC4 /* ParseHandler.swift in Sources */,
-				D6CFE33B2451FC55001939F9 /* Category.swift in Sources */,
+				D6CFE33B2451FC55001939F9 /* ExerciseCategory.swift in Sources */,
+				D661ED2A2456F62E004BC15A /* ApiHandlerProtocol.swift in Sources */,
 				D6CFE3402452C403001939F9 /* ExerciseImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,18 +511,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6DEC9232455D50B0004C7E4 /* ExerciseViewModelTests.swift in Sources */,
-				D6DEC92F2455F45D0004C7E4 /* ExerciseServiceTests.swift in Sources */,
+				D661ED2C2456F696004BC15A /* CategoryServiceTests.swift in Sources */,
 				D6DEC9342455F9D30004C7E4 /* ParseHandlerTests.swift in Sources */,
-				D6DEC9282455EB290004C7E4 /* MapModelToCiewModelHelperTests.swift in Sources */,
+				D6DEC9282455EB290004C7E4 /* MapModelToViewModelHelperTests.swift in Sources */,
 				D6DEC9312455F5790004C7E4 /* ApiHandlerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D669D22724506E0C00381CC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D669D23024506E0C00381CC4 /* My_WorkoutUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,11 +525,6 @@
 			isa = PBXTargetDependency;
 			target = D669D20924506E0400381CC4 /* My Workout */;
 			targetProxy = D669D22124506E0C00381CC4 /* PBXContainerItemProxy */;
-		};
-		D669D22D24506E0C00381CC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D669D20924506E0400381CC4 /* My Workout */;
-			targetProxy = D669D22C24506E0C00381CC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -705,7 +705,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My WorkoutTests/Info.plist";
+				INFOPLIST_FILE = "My WorkoutTests/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -727,7 +727,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My WorkoutTests/Info.plist";
+				INFOPLIST_FILE = "My WorkoutTests/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -739,46 +739,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Workout.app/My Workout";
-			};
-			name = Release;
-		};
-		D669D23B24506E0C00381CC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My WorkoutUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurduver.My-WorkoutUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "My Workout";
-			};
-			name = Debug;
-		};
-		D669D23C24506E0C00381CC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35XQ58TLXS;
-				INFOPLIST_FILE = "My WorkoutUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurduver.My-WorkoutUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "My Workout";
 			};
 			name = Release;
 		};
@@ -808,15 +768,6 @@
 			buildConfigurations = (
 				D669D23824506E0C00381CC4 /* Debug */,
 				D669D23924506E0C00381CC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D669D23A24506E0C00381CC4 /* Build configuration list for PBXNativeTarget "My WorkoutUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D669D23B24506E0C00381CC4 /* Debug */,
-				D669D23C24506E0C00381CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

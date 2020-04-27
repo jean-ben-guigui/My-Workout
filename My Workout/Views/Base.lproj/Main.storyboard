@@ -36,50 +36,50 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="separatorColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" hidden="YES" contentMode="scaleAspectFit" id="Psu-es-rym">
-                                    <rect key="frame" x="0.0" y="188" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="181" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" id="6Gn-Dk-Ae1" customClass="ExerciseCell" customModule="My_Workout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="132"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Gn-Dk-Ae1" id="fXx-4Q-Ydm">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ngz-Ev-we0">
-                                                    <rect key="frame" x="88" y="3" width="326" height="124"/>
+                                                    <rect key="frame" x="88" y="3" width="326" height="117"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-zl-G4j">
-                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="124"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="117"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="k5T-Jv-v0n" userLabel="nameLabel">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="33.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="26.5"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                                     <color key="textColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="category" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="khe-WI-MP0" userLabel="categoryLabel">
-                                                                    <rect key="frame" x="0.0" y="35.5" width="326" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="326" height="20.5"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="equipment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="UPL-kS-T9I" userLabel="equipmentLabel">
-                                                                    <rect key="frame" x="0.0" y="58" width="326" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="51" width="326" height="20.5"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="primary muscles" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-8g-kNd" userLabel="primaryMusclesLabel">
-                                                                    <rect key="frame" x="0.0" y="80.5" width="326" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="73.5" width="326" height="20.5"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="secondary muscles" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="AyR-KJ-M1Z" userLabel="secondaryMusclesLabel">
-                                                                    <rect key="frame" x="0.0" y="103" width="326" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="96" width="326" height="21"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -97,7 +97,7 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-Bh-kNv">
-                                                    <rect key="frame" x="0.0" y="48" width="83" height="36"/>
+                                                    <rect key="frame" x="0.0" y="44.5" width="83" height="36"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -156,13 +156,13 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zij-ht-tIJ" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="203.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLR-eL-A0A">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="203.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="geh-rg-hKM" userLabel="ExerciseLabelStackview">
-                                                        <rect key="frame" x="5" y="5" width="404" height="193.5"/>
+                                                        <rect key="frame" x="5" y="5" width="404" height="239.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-u9-rHi" userLabel="nameLabel">
                                                                 <rect key="frame" x="0.0" y="0.0" width="69.5" height="41"/>
@@ -200,6 +200,23 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-ig-o8y">
+                                                                <rect key="frame" x="0.0" y="203.5" width="159" height="36"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OZH-OL-paH" userLabel="exerciseImage">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SIs-ZO-xYi" userLabel="exerciseImage2">
+                                                                        <rect key="frame" x="41" y="0.0" width="36" height="36"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Xmj-8s-V0Y" userLabel="exerciseImage3">
+                                                                        <rect key="frame" x="82" y="0.0" width="36" height="36"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Fzy-jl-Sh2" userLabel="exerciseImage4">
+                                                                        <rect key="frame" x="123" y="0.0" width="36" height="36"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -247,6 +264,10 @@
                         <outlet property="categoryLabel" destination="0Je-2U-4uY" id="lH8-41-Feo"/>
                         <outlet property="descriptionLabel" destination="aWD-fO-noR" id="biC-vF-B2x"/>
                         <outlet property="equipmentLabel" destination="sEB-tp-z9z" id="eiM-rF-iBS"/>
+                        <outlet property="exerciseImage" destination="OZH-OL-paH" id="XFj-W0-9fj"/>
+                        <outlet property="exerciseImage2" destination="SIs-ZO-xYi" id="ERX-Ai-q8q"/>
+                        <outlet property="exerciseImage3" destination="Xmj-8s-V0Y" id="vA0-Bi-Pdd"/>
+                        <outlet property="exerciseImage4" destination="Fzy-jl-Sh2" id="sGD-bH-eOY"/>
                         <outlet property="nameLabel" destination="J2w-u9-rHi" id="3WT-fr-STq"/>
                         <outlet property="primaryMusclesLabel" destination="jVY-ee-4BC" id="wvC-2C-0XR"/>
                         <outlet property="secondaryMusclesLabel" destination="ecQ-n5-Hfw" id="CrA-GX-UKh"/>
@@ -255,97 +276,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P56-Zt-MBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="745" y="19"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="cWn-op-Aw8">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="itU-YF-Apc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H7E-ym-5HP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPJ-G4-gtx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW8-JZ-Pgd" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1114"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="68J-BC-4AY" userLabel="ExerciseLabelStackview">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1114"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-dD-GZJ" userLabel="nameLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="412.5" height="1002.5"/>
-                                                        <string key="text">Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN hshdvs dbchsd hdbhb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ehjfdjfs</string>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                                        <color key="textColor" red="0.99607843139999996" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label BIIIIIIIIIIIIIIIIIIIIIIIENNNNNNNNNNNNNNNNNNNNNNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJS-5m-dJR" userLabel="categoryLabel">
-                                                        <rect key="frame" x="0.0" y="1006.5" width="412.5" height="107.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="68J-BC-4AY" secondAttribute="trailing" id="X8y-id-hrP"/>
-                                            <constraint firstItem="68J-BC-4AY" firstAttribute="leading" secondItem="SW8-JZ-Pgd" secondAttribute="leading" id="Xzp-AL-kQe"/>
-                                            <constraint firstItem="68J-BC-4AY" firstAttribute="height" secondItem="SW8-JZ-Pgd" secondAttribute="height" id="YwC-sc-hjR"/>
-                                            <constraint firstAttribute="bottom" secondItem="68J-BC-4AY" secondAttribute="bottom" id="sQa-80-Qpd"/>
-                                            <constraint firstItem="68J-BC-4AY" firstAttribute="top" secondItem="SW8-JZ-Pgd" secondAttribute="top" id="zek-7m-0D0"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="SW8-JZ-Pgd" firstAttribute="width" secondItem="FPJ-G4-gtx" secondAttribute="width" id="3dm-VI-9qQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="SW8-JZ-Pgd" secondAttribute="trailing" id="eDL-sb-0Fz"/>
-                                    <constraint firstAttribute="bottom" secondItem="SW8-JZ-Pgd" secondAttribute="bottom" id="fR9-Ym-1lw"/>
-                                    <constraint firstItem="SW8-JZ-Pgd" firstAttribute="leading" secondItem="FPJ-G4-gtx" secondAttribute="leading" id="hZS-aR-iWg"/>
-                                    <constraint firstItem="SW8-JZ-Pgd" firstAttribute="top" secondItem="FPJ-G4-gtx" secondAttribute="top" id="p5G-mz-zcE"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="9es-Gf-PTv"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="JNL-Pf-J54"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wDA-Jr-eQO" firstAttribute="trailing" secondItem="FPJ-G4-gtx" secondAttribute="trailing" id="IFc-VK-WKN"/>
-                            <constraint firstItem="FPJ-G4-gtx" firstAttribute="leading" secondItem="wDA-Jr-eQO" secondAttribute="leading" id="RCl-pJ-on6"/>
-                            <constraint firstItem="FPJ-G4-gtx" firstAttribute="top" secondItem="wDA-Jr-eQO" secondAttribute="top" id="ofZ-Cm-1BG"/>
-                            <constraint firstItem="wDA-Jr-eQO" firstAttribute="bottom" secondItem="FPJ-G4-gtx" secondAttribute="bottom" id="tbg-O7-gUZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="wDA-Jr-eQO"/>
-                    </view>
-                    <size key="freeformSize" width="414" height="896"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vwf-vY-ymd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2158" y="50"/>
         </scene>
     </scenes>
     <resources>

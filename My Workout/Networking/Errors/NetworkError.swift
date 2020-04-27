@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Error linked to Network request
 public enum NetworkError: Error {
     case JSONDecoding(_ error: Error?)
     case urlInit

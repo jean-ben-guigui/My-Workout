@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol WgerAPIEndpoint: Decodable, Hashable {
+/// A endpoint for the wger API.
+///
+/// Examples: muscle, equipment.
+protocol WgerAPIEndpoint: Decodable {
     var id: Int { get }
 }

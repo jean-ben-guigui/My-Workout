@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An exercise image as specified in the wger api model
 struct ExerciseImage: WgerAPIEndpoint {
     let id: Int
     let url: URL

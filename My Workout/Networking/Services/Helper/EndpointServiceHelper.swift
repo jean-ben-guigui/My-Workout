@@ -8,18 +8,17 @@
 
 import Foundation
 
+/// Fetch and parse data for a given endpoint
 struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
     typealias Page = EndpointPage<Endpoint>
     
-    private let apiHandler: ApiHandler
-    private let parseHandler: ParseHandler<Page>
+    private let apiHandler: ApiHandlerProtocol
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<Page>) {
+    init(apiHandler: ApiHandlerProtocol) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
     }
     
-    ///get the data of a page then parse it. If there is more than one page, does it recursively for each next pages.
+    /// Fetch and parse all the pages availables for a given url
     func getPages(
         from url: URL,
         andAddItTo initialCategories: [Endpoint] = [],
@@ -41,21 +40,15 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
         }
     }
     
+    /// Fetch and parse a page for a given url
     func getNextPage(
         from url: URL,
         completionHandler: @escaping (((Result<Page, NetworkError>)) -> Void)
     ) {
-        apiHandler.getData(url) { (dataResult) in
-            switch dataResult {
-            case .success(let data):
-                self.parseHandler.parseData(data) { (endpointPageResult) in
-                    switch endpointPageResult {
-                    case .success(let endpointPage):
-                        completionHandler(.success(endpointPage))
-                    case .failure(let error):
-                        completionHandler(.failure(error))
-                    }
-                }
+        apiHandler.get(url) { (endpointPageResult: Result<Page, NetworkError>) in
+            switch endpointPageResult {
+            case .success(let endpointPage):
+                completionHandler(.success(endpointPage))
             case .failure(let error):
                 completionHandler(.failure(error))
             }

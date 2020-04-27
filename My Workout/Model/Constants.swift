@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Store constants like
 struct Constants {
     static let wgerHost = "wger.de"
     enum Query {

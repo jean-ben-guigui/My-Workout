@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Allows to parse a html string and return an attributedString with the font UIFont.TextStyle.body
 extension String {
     var htmlToAttributedString: NSAttributedString? {
         guard let data = data(using: .utf8) else { return NSAttributedString() }

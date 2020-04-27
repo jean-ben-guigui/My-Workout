@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A muscle as specified in the wger api model
 struct Muscle: WgerAPIEndpoint {
     let id: Int
     let name: String
