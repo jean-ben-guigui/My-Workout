@@ -19,14 +19,17 @@ class ParseHandlerTests: XCTestCase {
                 "name": "Barbell"
             }
         """
-        let json = jsonString.data(using: .utf8)!
-        parseHandler.parseData(json) {
-            switch $0 {
-            case .success(let equipment):
-                XCTAssertEqual(equipment, Equipment(id: 1, name: "Barbell"))
-            case .failure(_):
-                XCTFail()
+        if let json = jsonString.data(using: .utf8) {
+            parseHandler.parseData(json) {
+                switch $0 {
+                case .success(let equipment):
+                    XCTAssertEqual(equipment, Equipment(id: 1, name: "Barbell"))
+                case .failure(_):
+                    XCTFail()
+                }
             }
+        } else {
+            XCTFail()
         }
     }
     

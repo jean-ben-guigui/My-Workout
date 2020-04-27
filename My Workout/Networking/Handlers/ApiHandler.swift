@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct ApiHandler {
+struct ApiHandler: ApiHandlerProtocol {
     ///Get data from a url and decode it
-    func get<T: Decodable>(_ url: URL, completionHandler: @escaping(Result<T, NetworkError>) -> Void) {
+    func get<ToDecode: Decodable>(_ url: URL, completionHandler: @escaping(Result<ToDecode, NetworkError>) -> Void) {
         getData(url) {
             switch $0 {
             case .success(let data):
-                let parseHandler = ParseHandler<T>()
+                let parseHandler = ParseHandler<ToDecode>()
                 parseHandler.parseData(data) {
                     completionHandler($0)
                 }
@@ -40,7 +40,7 @@ struct ApiHandler {
     func createRequest(
         host: String,
         path: String,
-        defaultQueries: Bool = true,
+        defaultQueries: Bool? = true,
         queries: [String: String]? = nil
     ) -> URL? {
         var components = URLComponents()
@@ -48,7 +48,7 @@ struct ApiHandler {
         components.host = host
         components.path = path
         
-        if defaultQueries {
+        if let defaultQueries = defaultQueries, defaultQueries {
             let ApprovedExercisesQuery = URLQueryItem(
                 name: Constants.Query.ApprovedExercisesQuery.name,
                 value: Constants.Query.ApprovedExercisesQuery.value

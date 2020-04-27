@@ -91,7 +91,7 @@ class FetchExerciseViewModelManager {
     private func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
-        let categoryService = CategoryService(apiHandler: apiHandler)
+        let categoryService = ExerciseCategoryService(apiHandler: apiHandler)
         
         categoryService.getAll() { [weak self] (categoriesResult) in
             guard let self = self else {

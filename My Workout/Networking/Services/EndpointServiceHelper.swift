@@ -11,9 +11,9 @@ import Foundation
 struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
     typealias Page = EndpointPage<Endpoint>
     
-    private let apiHandler: ApiHandler
+    private let apiHandler: ApiHandlerProtocol
     
-    init(apiHandler: ApiHandler) {
+    init(apiHandler: ApiHandlerProtocol) {
         self.apiHandler = apiHandler
     }
     
