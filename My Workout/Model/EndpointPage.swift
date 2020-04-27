@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A page for a given endpoint of the wger api 
 struct EndpointPage<Endpoint: WgerAPIEndpoint>: Decodable {
     var nextPageUrl: URL?
     var elements: [Endpoint]

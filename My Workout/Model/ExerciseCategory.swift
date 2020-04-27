@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An category as specified in the wger api model
 struct ExerciseCategory: WgerAPIEndpoint {
     let id: Int
     let name: String

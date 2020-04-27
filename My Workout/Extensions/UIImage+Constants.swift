@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// UIImage extension to access bundle images
 extension UIImage {
     enum Exercise {
         static let placeholder = UIImage(named: "exercise-placeholder")!

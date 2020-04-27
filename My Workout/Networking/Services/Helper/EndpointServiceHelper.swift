@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Fetch and parse data for a given endpoint
 struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
     typealias Page = EndpointPage<Endpoint>
     
@@ -17,7 +18,7 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
         self.apiHandler = apiHandler
     }
     
-    ///fetch and parse all the pages available
+    /// Fetch and parse all the pages availables for a given url
     func getPages(
         from url: URL,
         andAddItTo initialCategories: [Endpoint] = [],
@@ -39,7 +40,7 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
         }
     }
     
-    ///fetch and parse a page
+    /// Fetch and parse a page for a given url
     func getNextPage(
         from url: URL,
         completionHandler: @escaping (((Result<Page, NetworkError>)) -> Void)

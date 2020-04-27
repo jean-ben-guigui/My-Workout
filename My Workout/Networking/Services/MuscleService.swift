@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Fetches muscles
 struct MuscleService {
     typealias MusclePage = EndpointPage<Muscle>
     typealias MuscleServiceHelper = EndpointServiceHelper<Muscle>

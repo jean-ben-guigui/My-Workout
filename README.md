@@ -1,6 +1,6 @@
 # My-Workout
 ## Launch the app
-To launch the app, open "My Workout.xcodeproj" using XCode and press Command+R.
+Open "My Workout.xcodeproj" using XCode. Then use Command+R to run the project. Alternately, you can use Command+U to run the tests.
 
 ## Architecture
 I used MVVM in this project because the model provided from the wger API is slightly different from the model we want to display on the screen.
@@ -23,5 +23,5 @@ I use forced unwrapping only in 3 cases:
 ## Leads for improvment:
 - Higher test coverage.
 - Load the exerciseTableView first without the images and then download the images, so that the tableView appears quickly.
-- Load the images one at a time using a delegate, notifications or reactive programming.
-- Use a collectionView to display images in the DetailExerciseViewController.
+- Load the images one at a time.
+- Use a collectionView to display the images in the DetailExerciseViewController.

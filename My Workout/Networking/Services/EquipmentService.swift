@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Fetches equipment
 struct EquipmentService {
     typealias EquipmentPage = EndpointPage<Equipment>
     typealias EquipmentServiceHelper = EndpointServiceHelper<Equipment>

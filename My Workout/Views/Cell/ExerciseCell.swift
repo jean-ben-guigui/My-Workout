@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class ExerciseCell: UITableViewCell {
-    
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var equipmentLabel: UILabel!

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Fetches exercises
 class ExerciseService {
     
     private let apiHandler: ApiHandler
@@ -20,6 +21,7 @@ class ExerciseService {
         self.endpointServiceHelper = EndpointServiceHelper(apiHandler: apiHandler)
     }
     
+    /// Fetches the next exercises to display
     func getNextExercises(completionHandler: @escaping ((Result<[Exercise], NetworkError>) -> Void)) {
         let url = nextExercisesUrl ??
             apiHandler.createRequest(

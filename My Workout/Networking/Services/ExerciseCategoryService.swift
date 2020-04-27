@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Fetches categories
 struct ExerciseCategoryService {
     typealias ExerciseCategoryPage = EndpointPage<ExerciseCategory>
     typealias ExerciseCategoryServiceHelper = EndpointServiceHelper<ExerciseCategory>

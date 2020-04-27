@@ -25,6 +25,7 @@ class FetchExerciseViewModelManager {
         self.exerciseService = exerciseService
     }
     
+    /// Download all the data to be displayed in the view controllers
     func loadData(completionHandler: @escaping (Set<ExerciseViewModel>) -> Void) {
         let fetchGroup = DispatchGroup()
         
@@ -38,7 +39,8 @@ class FetchExerciseViewModelManager {
         fetchExercises(dispatchGroup: fetchGroup)
         fetchGroup.wait()
         
-        exercisesViewModel = self.getViewModelFrom(exercises)
+        let map = MapModelToViewModelHelper()
+        exercisesViewModel = map.getViewModelFrom(exercises, allMuscles: muscles, allCategories: categories, allEquipment: equipment)
         
         let downloadGroup = DispatchGroup()
         downloadImages(dispatchGroup: downloadGroup)
@@ -47,20 +49,9 @@ class FetchExerciseViewModelManager {
         completionHandler(exercisesViewModel)
     }
     
-    private func getViewModelFrom(_ exercises: Set<Exercise>) -> Set<ExerciseViewModel> {
-        var exercisesViewModelArray = [ExerciseViewModel]()
-        for exercise in exercises {
-            let exerciseViewModel = ExerciseViewModel(
-                exercise: exercise,
-                allMuscles: muscles,
-                allCategories: categories,
-                allEquipment: equipment
-            )
-            exercisesViewModelArray.append(exerciseViewModel)
-        }
-        return Set(exercisesViewModelArray)
-    }
+    //MARK: - Images
     
+    /// Download Images for the current set of Exercices
     private func downloadImages(
         dispatchGroup: DispatchGroup
     ) {
@@ -87,7 +78,10 @@ class FetchExerciseViewModelManager {
             }
         }
     }
+    
+    //MARK: - Categories
 
+    /// Fetch the exercise categories and add them to the category dictionnary
     private func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
@@ -109,6 +103,9 @@ class FetchExerciseViewModelManager {
         }
     }
     
+    //MARK: - Exercises
+    
+    /// Fetch the next page of exercises and add them to the exercise Set dictionnary
     private func fetchExercises(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         exerciseService.getNextExercises() { [weak self] (exercisesResult) in
@@ -125,6 +122,9 @@ class FetchExerciseViewModelManager {
         }
     }
     
+    //MARK: - Muscles
+    
+    /// Fetch the muscles and add them to the muscle dictionnary
     private func fetchMuscles(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         let muscleService = MuscleService(apiHandler: apiHandler)
@@ -144,6 +144,9 @@ class FetchExerciseViewModelManager {
         }
     }
     
+    //MARK: - Equipment
+    
+    /// Fetch the equipment and add it to the equipment dictionnary
     private func fetchEquipment(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         

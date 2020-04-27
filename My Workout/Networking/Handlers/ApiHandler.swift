@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Handle network requests
 struct ApiHandler: ApiHandlerProtocol {
     ///Get data from a url and decode it
     func get<ToDecode: Decodable>(_ url: URL, completionHandler: @escaping(Result<ToDecode, NetworkError>) -> Void) {

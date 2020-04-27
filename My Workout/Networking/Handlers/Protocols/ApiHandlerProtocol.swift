@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A protocol that allows to mock the apiHandler for testing
 protocol ApiHandlerProtocol {
     func get<ToDecode: Decodable>(_ url: URL, completionHandler: @escaping(Result<ToDecode, NetworkError>) -> Void)
     func createRequest(
