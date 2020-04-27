@@ -200,20 +200,20 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-ig-o8y">
-                                                                <rect key="frame" x="0.0" y="203.5" width="174" height="36"/>
+                                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-ig-o8y">
+                                                                <rect key="frame" x="0.0" y="203.5" width="159" height="36"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OZH-OL-paH" userLabel="exerciseImage">
                                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                                     </imageView>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SIs-ZO-xYi" userLabel="exerciseImage2">
-                                                                        <rect key="frame" x="46" y="0.0" width="36" height="36"/>
+                                                                        <rect key="frame" x="41" y="0.0" width="36" height="36"/>
                                                                     </imageView>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Xmj-8s-V0Y" userLabel="exerciseImage3">
-                                                                        <rect key="frame" x="92" y="0.0" width="36" height="36"/>
+                                                                        <rect key="frame" x="82" y="0.0" width="36" height="36"/>
                                                                     </imageView>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Fzy-jl-Sh2" userLabel="exerciseImage4">
-                                                                        <rect key="frame" x="138" y="0.0" width="36" height="36"/>
+                                                                        <rect key="frame" x="123" y="0.0" width="36" height="36"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>

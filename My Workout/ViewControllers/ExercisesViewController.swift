@@ -19,7 +19,6 @@ class ExercisesViewController: UIViewController {
     private let fetchExerciseViewModelManager = FetchExerciseViewModelManager()
     private var loading = false
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,11 +37,8 @@ class ExercisesViewController: UIViewController {
         }
     }
     
-
-    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = exerciseTableView.indexPathForSelectedRow,
             let exerciseViewModel = dataSource?.itemIdentifier(for: indexPath),

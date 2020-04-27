@@ -8,13 +8,12 @@
 
 import Foundation
 
+/// Mock protocol to test the services
 struct MockApiHandler: ApiHandlerProtocol {
-    
     
     public var successResponse: Decodable?
     public var errorResponse: NetworkError
     public var url: URL?
-    
     
     func get<ToDecode: Decodable>(_ url: URL, completionHandler: @escaping(Result<ToDecode, NetworkError>) -> Void) {
         switch successResponse {

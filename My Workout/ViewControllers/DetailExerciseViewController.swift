@@ -62,8 +62,6 @@ class DetailExerciseViewController: UIViewController {
                             guard let self = self else {
                                 return
                             }
-                            print(images)
-                            // This is not pretty, an improvement would be to implement this using a collectionView
                             var fourImagesArray = [UIImage?]()
                             for index in 0...3 {
                                 fourImagesArray.append(images.count > index ? images[index] : nil)

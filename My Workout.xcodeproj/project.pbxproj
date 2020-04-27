@@ -11,7 +11,6 @@
 		D62C88E024559735000464C0 /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C88DF24559735000464C0 /* DetailExerciseViewController.swift */; };
 		D661ED1B24564CD2004BC15A /* NetworkMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED1A24564CD2004BC15A /* NetworkMapService.swift */; };
 		D661ED1F2456C179004BC15A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D661ED1E2456C179004BC15A /* README.md */; };
-		D661ED262456D22D004BC15A /* FetchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED252456D22D004BC15A /* FetchManagerTests.swift */; };
 		D661ED2A2456F62E004BC15A /* ApiHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED292456F62E004BC15A /* ApiHandlerProtocol.swift */; };
 		D661ED2C2456F696004BC15A /* CategoryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */; };
 		D669D20E24506E0400381CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669D20D24506E0400381CC4 /* AppDelegate.swift */; };
@@ -45,7 +44,6 @@
 		D6DEC9212455B7370004C7E4 /* String+HtmlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9202455B7370004C7E4 /* String+HtmlHelper.swift */; };
 		D6DEC9232455D50B0004C7E4 /* ExerciseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */; };
 		D6DEC9282455EB290004C7E4 /* MapModelToViewModelHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */; };
-		D6DEC92F2455F45D0004C7E4 /* ExerciseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */; };
 		D6DEC9312455F5790004C7E4 /* ApiHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9302455F5790004C7E4 /* ApiHandlerTests.swift */; };
 		D6DEC9342455F9D30004C7E4 /* ParseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC9332455F9D30004C7E4 /* ParseHandlerTests.swift */; };
 /* End PBXBuildFile section */
@@ -65,7 +63,6 @@
 		D62C88DF24559735000464C0 /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
 		D661ED1A24564CD2004BC15A /* NetworkMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMapService.swift; sourceTree = "<group>"; };
 		D661ED1E2456C179004BC15A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		D661ED252456D22D004BC15A /* FetchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchManagerTests.swift; sourceTree = "<group>"; };
 		D661ED292456F62E004BC15A /* ApiHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlerProtocol.swift; sourceTree = "<group>"; };
 		D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryServiceTests.swift; sourceTree = "<group>"; };
 		D669D20A24506E0400381CC4 /* My Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +100,6 @@
 		D6DEC9202455B7370004C7E4 /* String+HtmlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HtmlHelper.swift"; sourceTree = "<group>"; };
 		D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModelTests.swift; sourceTree = "<group>"; };
 		D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelToViewModelHelperTests.swift; sourceTree = "<group>"; };
-		D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseServiceTests.swift; sourceTree = "<group>"; };
 		D6DEC9302455F5790004C7E4 /* ApiHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlerTests.swift; sourceTree = "<group>"; };
 		D6DEC9332455F9D30004C7E4 /* ParseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,14 +122,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D661ED202456D1A4004BC15A /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				D661ED252456D22D004BC15A /* FetchManagerTests.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		D661ED2F2456F7BF004BC15A /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +133,7 @@
 		D669D20124506E0400381CC4 = {
 			isa = PBXGroup;
 			children = (
+				D661ED1E2456C179004BC15A /* README.md */,
 				D669D20C24506E0400381CC4 /* My Workout */,
 				D669D22324506E0C00381CC4 /* My WorkoutTests */,
 				D669D20B24506E0400381CC4 /* Products */,
@@ -163,16 +152,15 @@
 		D669D20C24506E0400381CC4 /* My Workout */ = {
 			isa = PBXGroup;
 			children = (
-				D661ED1E2456C179004BC15A /* README.md */,
-				D6DEC92C2455F2CD0004C7E4 /* Resources */,
 				D6DEC9242455E0860004C7E4 /* Extensions */,
-				D6CFE3372451FAA7001939F9 /* ViewModel */,
 				D6DEC92B2455F24B0004C7E4 /* Managers */,
 				D669D23D24507D1F00381CC4 /* Model */,
 				D669D2562451D36A00381CC4 /* Networking */,
+				D6DEC92C2455F2CD0004C7E4 /* Resources */,
 				D669D24024508FF300381CC4 /* Supporting files */,
-				D669D23F24507D6500381CC4 /* ViewControllers */,
 				D669D23E24507D2900381CC4 /* Views */,
+				D669D23F24507D6500381CC4 /* ViewControllers */,
+				D6CFE3372451FAA7001939F9 /* ViewModel */,
 			);
 			path = "My Workout";
 			sourceTree = "<group>";
@@ -180,13 +168,11 @@
 		D669D22324506E0C00381CC4 /* My WorkoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				D68DBF3C24571DFF0038E323 /* Supporting files */,
-				D661ED2F2456F7BF004BC15A /* Mocks */,
-				D661ED202456D1A4004BC15A /* Manager */,
 				D6DEC9322455F5860004C7E4 /* Handlers */,
+				D661ED2F2456F7BF004BC15A /* Mocks */,
 				D6DEC92D2455F43E0004C7E4 /* Services */,
-				D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */,
-				D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */,
+				D68DBF3C24571DFF0038E323 /* Supporting files */,
+				D68DBF412457504E0038E323 /* ViewModel */,
 			);
 			path = "My WorkoutTests";
 			sourceTree = "<group>";
@@ -196,12 +182,12 @@
 			children = (
 				D68DBF3F245725850038E323 /* Protocols */,
 				D669D2452450A21100381CC4 /* Constants.swift */,
-				D669D2502451902B00381CC4 /* Exercise.swift */,
+				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
 				D6762336245397FA00843F98 /* Equipment.swift */,
+				D669D2502451902B00381CC4 /* Exercise.swift */,
+				D6CFE33A2451FC55001939F9 /* ExerciseCategory.swift */,
 				D67C2876245479810079EC84 /* ExerciseImage.swift */,
 				D669D2592451F38500381CC4 /* Muscle.swift */,
-				D6CFE33A2451FC55001939F9 /* ExerciseCategory.swift */,
-				D6CFE345245302CD001939F9 /* EndpointPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +278,15 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		D68DBF412457504E0038E323 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6DEC9222455D50B0004C7E4 /* ExerciseViewModelTests.swift */,
+				D6DEC9272455EB290004C7E4 /* MapModelToViewModelHelperTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D6CFE3372451FAA7001939F9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +358,6 @@
 			isa = PBXGroup;
 			children = (
 				D661ED2B2456F696004BC15A /* CategoryServiceTests.swift */,
-				D6DEC92E2455F45D0004C7E4 /* ExerciseServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -517,8 +511,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6DEC9232455D50B0004C7E4 /* ExerciseViewModelTests.swift in Sources */,
-				D6DEC92F2455F45D0004C7E4 /* ExerciseServiceTests.swift in Sources */,
-				D661ED262456D22D004BC15A /* FetchManagerTests.swift in Sources */,
 				D661ED2C2456F696004BC15A /* CategoryServiceTests.swift in Sources */,
 				D6DEC9342455F9D30004C7E4 /* ParseHandlerTests.swift in Sources */,
 				D6DEC9282455EB290004C7E4 /* MapModelToViewModelHelperTests.swift in Sources */,
