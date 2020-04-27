@@ -16,7 +16,7 @@ class ExercisesViewController: UIViewController {
     
     @IBOutlet private weak var exerciseTableView: UITableView!
     private var dataSource: UITableViewDiffableDataSource<Section, ExerciseViewModel>?
-    private let fetchExerciseManager = FetchExerciseManager()
+    private let fetchExerciseViewModelManager = FetchExerciseViewModelManager()
     private var loading = false
     
     
@@ -27,7 +27,7 @@ class ExercisesViewController: UIViewController {
             guard let self = self else {
                 return
             }
-            self.fetchExerciseManager.loadData() { (exercisesViewModel) in
+            self.fetchExerciseViewModelManager.loadData() { (exercisesViewModel) in
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else {
                         return
@@ -72,13 +72,9 @@ class ExercisesViewController: UIViewController {
     func configureExerciseCell(cell: ExerciseCell, exercise: ExerciseViewModel) {
         cell.categoryLabel.text = exercise.category
         cell.nameLabel.text = exercise.name
-//        cell.nameLabel.numberOfLines = 0
         cell.equipmentLabel.text = exercise.equipment
-//        cell.equiplentLabel.numberOfLines = 0
         cell.primaryMusclesLabel.text = exercise.primaryMuscles
-//        cell.primaryMusclesLabel.numberOfLines = 0
         cell.secondaryMusclesLabel.text = exercise.secondaryMuscles
-//        cell.secondaryMusclesLabel.numberOfLines = 0
         if let image = exercise.image {
             cell.exerciseImage.backgroundColor = .white //Fix the translucent images in dark mode
             cell.exerciseImage.image = image
@@ -121,7 +117,7 @@ extension ExercisesViewController: UITableViewDelegate {
             guard let self = self else {
                 return
             }
-            self.fetchExerciseManager.loadData() { [weak self] (exercisesViewModel) in
+            self.fetchExerciseViewModelManager.loadData() { [weak self] (exercisesViewModel) in
                 guard let self = self else {
                     return
                 }

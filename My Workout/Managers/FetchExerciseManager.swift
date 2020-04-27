@@ -8,8 +8,8 @@
 
 import Foundation
 
-///Fetches data for the ExerciseViewController
-class FetchExerciseManager {
+/// Fetches ExerciseViewModel for the view controllers
+class FetchExerciseViewModelManager {
     private var initialized = false
     private var muscles = [Int: String]()
     private var equipment = [Int: String]()
@@ -19,7 +19,11 @@ class FetchExerciseManager {
     private var exercisesViewModel = Set<ExerciseViewModel>()
     private var error: NetworkError?
     private let apiHandler = ApiHandler()
-    private let exerciseService = ExerciseService(apiHandler: ApiHandler())
+    let exerciseService: ExerciseService
+    
+    init(exerciseService: ExerciseService = ExerciseService()) {
+        self.exerciseService = exerciseService
+    }
     
     func loadData(completionHandler: @escaping (Set<ExerciseViewModel>) -> Void) {
         let fetchGroup = DispatchGroup()
@@ -30,6 +34,7 @@ class FetchExerciseManager {
             fetchMuscles(dispatchGroup: fetchGroup)
             fetchEquipment(dispatchGroup: fetchGroup)
         }
+        
         fetchExercises(dispatchGroup: fetchGroup)
         fetchGroup.wait()
         
@@ -59,7 +64,7 @@ class FetchExerciseManager {
     private func downloadImages(
         dispatchGroup: DispatchGroup
     ) {
-        let imageService = ExerciseImageService(apiHandler: apiHandler, parseHandler: ParseHandler<ExerciseImage>())
+        let imageService = ExerciseImageService(apiHandler: apiHandler)
         for exercise in exercises {
             dispatchGroup.enter()
             imageService.getRandomImage(for: exercise) { [weak self] (uiImageResult) in
@@ -86,8 +91,7 @@ class FetchExerciseManager {
     private func fetchCategories(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
-        let categoryService = CategoryService(apiHandler: apiHandler,
-                                              parseHandler: ParseHandler<EndpointPage<Category>>())
+        let categoryService = CategoryService(apiHandler: apiHandler)
         
         categoryService.getAll() { [weak self] (categoriesResult) in
             guard let self = self else {
@@ -123,8 +127,7 @@ class FetchExerciseManager {
     
     private func fetchMuscles(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
-        let muscleService = MuscleService(apiHandler: apiHandler,
-                                          parseHandler: ParseHandler<Muscle>())
+        let muscleService = MuscleService(apiHandler: apiHandler)
         muscleService.getAll() { [weak self] (musclesResult) in
             guard let self = self else {
                 return
@@ -144,8 +147,7 @@ class FetchExerciseManager {
     private func fetchEquipment(dispatchGroup: DispatchGroup) {
         dispatchGroup.enter()
         
-        let equipmentService = EquipmentService(apiHandler: apiHandler,
-                                                parseHandler: ParseHandler<Equipment>())
+        let equipmentService = EquipmentService(apiHandler: apiHandler)
         
         equipmentService.getAll() { [weak self] (equipmentResult) in
             guard let self = self else {

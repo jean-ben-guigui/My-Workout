@@ -12,14 +12,12 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
     typealias Page = EndpointPage<Endpoint>
     
     private let apiHandler: ApiHandler
-    private let parseHandler: ParseHandler<Page>
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<Page>) {
+    init(apiHandler: ApiHandler) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
     }
     
-    ///get the data of a page then parse it. If there is more than one page, does it recursively for each next pages.
+    ///fetch and parse all the pages available
     func getPages(
         from url: URL,
         andAddItTo initialCategories: [Endpoint] = [],
@@ -41,21 +39,15 @@ struct EndpointServiceHelper<Endpoint: WgerAPIEndpoint> {
         }
     }
     
+    ///fetch and parse a page
     func getNextPage(
         from url: URL,
         completionHandler: @escaping (((Result<Page, NetworkError>)) -> Void)
     ) {
-        apiHandler.getData(url) { (dataResult) in
-            switch dataResult {
-            case .success(let data):
-                self.parseHandler.parseData(data) { (endpointPageResult) in
-                    switch endpointPageResult {
-                    case .success(let endpointPage):
-                        completionHandler(.success(endpointPage))
-                    case .failure(let error):
-                        completionHandler(.failure(error))
-                    }
-                }
+        apiHandler.get(url) { (endpointPageResult: Result<Page, NetworkError>) in
+            switch endpointPageResult {
+            case .success(let endpointPage):
+                completionHandler(.success(endpointPage))
             case .failure(let error):
                 completionHandler(.failure(error))
             }

@@ -13,13 +13,11 @@ struct CategoryService {
     typealias CategoryServiceHelper = EndpointServiceHelper<Category>
     
     let apiHandler: ApiHandler
-    let parseHandler: ParseHandler<CategoryPage>
     let endpointServiceHelper: CategoryServiceHelper
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<CategoryPage>) {
+    init(apiHandler: ApiHandler = ApiHandler()) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
-        self.endpointServiceHelper = CategoryServiceHelper(apiHandler: apiHandler, parseHandler: parseHandler)
+        self.endpointServiceHelper = CategoryServiceHelper(apiHandler: apiHandler)
     }
     
     func getAll(completionHandler: @escaping ((Result<[Category], NetworkError>) -> Void)) {

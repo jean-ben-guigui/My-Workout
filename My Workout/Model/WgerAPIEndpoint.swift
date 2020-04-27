@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol WgerAPIEndpoint: Decodable, Hashable {
+protocol WgerAPIEndpoint: Decodable {
     var id: Int { get }
 }

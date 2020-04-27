@@ -9,14 +9,15 @@
 import Foundation
 
 class ExerciseService {
+    
     private let apiHandler: ApiHandler
     private let endpointServiceHelper: EndpointServiceHelper<Exercise>
     private var nextExercisesUrl: URL?
     
-    init(apiHandler: ApiHandler) {
+    init(apiHandler: ApiHandler = ApiHandler()) {
         self.apiHandler = apiHandler
         self.nextExercisesUrl = nil
-        self.endpointServiceHelper = EndpointServiceHelper(apiHandler: apiHandler, parseHandler: ParseHandler<EndpointPage<Exercise>>())
+        self.endpointServiceHelper = EndpointServiceHelper(apiHandler: apiHandler)
     }
     
     func getNextExercises(completionHandler: @escaping ((Result<[Exercise], NetworkError>) -> Void)) {

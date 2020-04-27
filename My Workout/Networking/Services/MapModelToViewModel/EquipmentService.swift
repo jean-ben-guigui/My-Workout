@@ -13,13 +13,11 @@ struct EquipmentService {
     typealias EquipmentServiceHelper = EndpointServiceHelper<Equipment>
     
     let apiHandler: ApiHandler
-    let parseHandler: ParseHandler<Equipment>
     let endpointServiceHelper: EndpointServiceHelper<Equipment>
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<Equipment>) {
+    init(apiHandler: ApiHandler = ApiHandler()) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
-        self.endpointServiceHelper = EndpointServiceHelper<Equipment>(apiHandler: apiHandler, parseHandler: ParseHandler<EquipmentPage>())
+        self.endpointServiceHelper = EndpointServiceHelper<Equipment>(apiHandler: apiHandler)
     }
     
     func getAll(completionHandler: @escaping ((Result<[Equipment], NetworkError>) -> Void)) {

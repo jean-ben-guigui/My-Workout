@@ -14,13 +14,11 @@ struct ExerciseImageService {
     typealias ExerciseImageServiceHelper = EndpointServiceHelper<ExerciseImage>
     
     let apiHandler: ApiHandler
-    let parseHandler: ParseHandler<ExerciseImage>
     let endpointServiceHelper: ExerciseImageServiceHelper
     
-    init(apiHandler: ApiHandler, parseHandler: ParseHandler<ExerciseImage>) {
+    init(apiHandler: ApiHandler) {
         self.apiHandler = apiHandler
-        self.parseHandler = parseHandler
-        self.endpointServiceHelper = ExerciseImageServiceHelper(apiHandler: apiHandler, parseHandler: ParseHandler<ExerciseImagePage>())
+        self.endpointServiceHelper = ExerciseImageServiceHelper(apiHandler: apiHandler)
     }
     
     func getRandomImage(for exercise: Exercise, completionHandler: @escaping (Result<UIImage?, NetworkError>) -> Void) {

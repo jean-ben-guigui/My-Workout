@@ -1,5 +1,5 @@
 //
-//  DetailExerciceViewController.swift
+//  DetailExerciseViewController.swift
 //  My Workout
 //
 //  Created by Arthur Duver on 26/04/2020.

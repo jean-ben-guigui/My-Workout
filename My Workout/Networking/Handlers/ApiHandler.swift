@@ -8,8 +8,24 @@
 
 import Foundation
 
-struct ApiHandler {    
-    func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
+struct ApiHandler {
+    ///Get data from a url and decode it
+    func get<T: Decodable>(_ url: URL, completionHandler: @escaping(Result<T, NetworkError>) -> Void) {
+        getData(url) {
+            switch $0 {
+            case .success(let data):
+                let parseHandler = ParseHandler<T>()
+                parseHandler.parseData(data) {
+                    completionHandler($0)
+                }
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
+    
+    ///Get data from a url
+    private func getData(_ url: URL, completionHandler: @escaping(Result<Data, NetworkError>) -> Void) {
             let request = URLRequest(url: url)
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
@@ -20,6 +36,7 @@ struct ApiHandler {
             }.resume()
         }
     
+    ///Create a URL
     func createRequest(
         host: String,
         path: String,
